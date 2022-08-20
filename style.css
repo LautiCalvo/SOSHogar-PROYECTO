@@ -1,0 +1,481 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: none;
+}
+
+/*INDEX */
+
+/*Estilos de logo y buscador(padre)*/
+.inicio{
+    display: flex;
+    background-image: url("./img/fondo1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Estilos de logo (hijo)*/
+.logo-inicio{
+    width: 400px;
+}
+
+
+/*estilos de boton de buscar(hijo)*/
+.buscar{
+    position: relative;
+    bottom: 155px;
+    left: 170px;
+
+}
+
+
+/* estios de buscador (hijo)*/
+.buscador{ 
+    margin-bottom: 50px;
+    padding-inline: 30px;
+    position: relative;
+    bottom: 80px;
+    font-size: 20px;
+    width: 300px;
+    border-radius: 10px;
+    border:  none
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Estilos de todo el menu(padre)*/
+.menu{
+    display: flex;
+    background-color: rgb(34, 32, 36);
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+      
+}
+
+/* Estilos de los items(hijo) */
+.menu-item a{
+    display: inline;
+    font-size: 45px;
+    color: aliceblue;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    border-left:solid 1px white;
+    padding-left: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Estilo de productos de inicio(padre) */
+.productos{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 10%;
+    padding-block: 5% ;
+
+    background-image: url(./img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+/*Estilo del producto del centro(hijo)*/
+ .imagen{
+    border-bottom: solid 1px black;
+    border-radius: 10px;
+    width: 497.5px;
+    height: 500px;
+
+ }
+
+
+
+
+
+
+ 
+
+
+
+
+ /* Estilos de los textos de los productos (padre)*/
+.item-product{
+    border: solid 1px black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: white;
+ 
+}
+
+
+/* Estilos del precio de la izquierda(hijo)*/
+.precios{
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.desc{
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-size: 25px;
+}
+
+
+/*Estilos de los logos de las redes(padre) */
+.redes{
+    background-color: rgb(24, 53, 80);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*Estilos de los logos(hijo) */
+.logo-redes{
+    margin-block: 20px;
+}
+
+
+/*Estilo del footer */
+footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 50px;
+    color: aliceblue;
+}
+
+
+/* ------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/*SEGUNDO ESTILO DE MENU PARA EL RESTO DE PAGINAS */
+.menu-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color:rgb(34, 32, 36); 
+    list-style-type: none;
+    font-size: 20px;
+    gap: 50px;
+}
+.menu-inicio{
+    width: 100px;
+    height: 80px;
+    position: relative;
+    bottom: 58px;
+    left: 50px;
+}
+
+.menu-item-2,.menu-item-2-a{
+    color: aliceblue;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    border-left:solid 1px white;
+    margin-block: 5px;
+    padding-left: 20px;
+    padding-right: 25px;
+}
+
+/*-----------------------------------------------------------*/
+
+
+
+/*CATEGORIAS Y PRODUCTOS*/
+
+
+
+
+/* ESTILOS DEL MAIN DE CATEGORIAS*/
+
+.catalogo{
+     background-image: url(./img/fondo2.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+}
+
+
+
+
+
+/* ESTILOS DE CATEGORIAS Y PRODUCTOS*/
+.subCatalogo{  
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    padding-left: 10%;
+    
+
+
+}
+
+
+.catalogo__item__img{
+    width: 297.5px;
+    height: 300px;
+    border-radius:  10px;
+    border-bottom: solid 1px black;
+    
+    
+}
+
+
+
+
+
+
+/* ESTILOS CATAGORIAS*/
+.catalogo__item{
+    border: solid 1px black;
+    border-radius:  10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-block: 40px;
+
+}
+
+.catalogo__item__h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+
+/* ESTILOS PRODUCTOS*/
+.catalogo__item2{
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+
+}
+
+/* ESTILOS PARRAFOS DE PRODUCTOS*/
+.catalogo__item__p{
+    font-family: 'Playfair Display', serif;
+}
+    
+/*ESTILO DE IMAGENES DE PRODUCTOS Y CATEGORIAS */  
+
+.subCatalogo1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-left: 1.5%;
+    
+    
+
+}
+
+.catalogo__item2{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 400px ;
+    height: 400px ;
+    margin-block: 20px;
+    
+
+}
+
+
+
+
+.catalogo__item__img2{
+    width: 397.5px;
+    height: 325px;
+    border-bottom: solid 1px black;
+    border-radius: 10px;
+
+}
+
+
+/*ESTILOS DEL TITULO DE CATALOGO */
+.catalogo-h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(236, 241, 168);
+}
+
+
+/* ESTILOS DEL MAIN DE PRODUCTOS*/
+.catalogo-2{
+    background-image: url(./img/fondo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/*ESTILOS DEL TITULO DE PRODUCTOS*/
+.catalogo-h1-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(185, 193, 230);
+}
+
+/* ---------------------------------------------------------------------*/
+
+
+
+
+
+/* CONTACTO*/
+
+/*ESTILOS DEL BODY DE CONTACTO*/
+.body__contacto{
+    background-image: url(./img/fondo4.jpg);
+}
+
+/*ESTIOS DEL TITULO DE CONTACTO*/
+.titluloContacto{
+    display: flex;
+    justify-content:center ;
+    font-size: 50px;
+    color: rgb(64, 134, 136);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*ESTILOS DE PARRAFO DE CONTACTO*/
+.parrafoContacto{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+    color:  rgb(83, 83, 81);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*ESTILOS DE GMAIL Y WHATSAPP(PADRE)*/
+.contacto__gmail__wsp{
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* ESTILOS DE GMAIL(HIJO)*/
+.contacto__gmail{
+    position: relative;
+    left: 150px;
+    top: 30px;
+    
+}
+
+/* ESTILOS DE WHATSAPP(HIJO)*/
+.contacto__wsp{
+    position: relative;
+    left: 270px;
+    width: 100px;
+    height: 100px;
+}
+/*--------------------------------------------------------------- */
+
+/* CONTACTO Y ACERCADE*/
+
+/*ESTILOS DEL TEXTO DEL MAPA*/
+.contacto__local{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*ESTILOS DE LAS REDES*/
+.contacto__seguinos{
+   display: flex;
+   justify-content: center;
+   background-color: rgb(235, 202, 159);
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* ----------------------------------------------------------------------*/
+
+
+/* ACERCA DE*/
+
+/*ESTILOS DE BODY DE ACERCADE*/
+.body__acercade{
+    background-image: url(./img/fondo4.jpg);
+    background-size: cover;
+
+}
+
+.acercade{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*ESTILOS DEL TITULO DE ACERCADE */
+.acercade__titulo{
+    justify-content: center;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*PARRAFO DE ACERCADE*/
+.acercade__parrafo{
+    width: 50%;
+   font-size: 30px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+

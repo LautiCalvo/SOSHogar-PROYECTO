@@ -23,13 +23,18 @@
 /*Estilos de logo (hijo)*/
 .logo-inicio{
     width: 400px;
+    transition: all 0.3s;
+}
+
+.logo-inicio:hover{
+    width: 420px;
 }
 
 
 /*estilos de boton de buscar(hijo)*/
 .buscar{
     position: relative;
-    bottom: 155px;
+    bottom: 105px;
     left: 170px;
 
 }
@@ -40,7 +45,7 @@
     margin-bottom: 50px;
     padding-inline: 30px;
     position: relative;
-    bottom: 80px;
+    bottom: 30px;
     font-size: 20px;
     width: 300px;
     border-radius: 10px;
@@ -77,6 +82,18 @@
     font-family: 'Playfair Display', serif;
     border-left:solid 1px white;
     padding-left: 80px;
+    
+    
+
+}
+.menu-item{
+    transition: all 0.3s;
+}
+
+.menu-item:hover{
+   
+    transform: scale(1.1) translateY(-10px);
+    
 }
 
 
@@ -103,6 +120,10 @@
     background-image: url(./img/fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
+   
+   
+
 
 }
 
@@ -134,8 +155,14 @@
     flex-direction: column;
     width: 500px;
     background-color: white;
+
+
+    
  
 }
+
+
+
 
 
 /* Estilos del precio de la izquierda(hijo)*/
@@ -165,6 +192,11 @@
 /*Estilos de los logos(hijo) */
 .logo-redes{
     margin-block: 20px;
+    transition: all 0.5s;
+    width: 50px;
+}
+.logo-redes:hover{
+    transform: scale(1.2) translateY(-10px);
 }
 
 
@@ -198,13 +230,22 @@ footer{
     list-style-type: none;
     font-size: 20px;
     gap: 50px;
+    
 }
+
+
+
 .menu-inicio{
     width: 100px;
     height: 80px;
     position: relative;
     bottom: 58px;
     left: 50px;
+    transition: all 1s;
+}
+.menu-inicio:hover{
+    transform: scale(1.1) translateY(-8px);
+    
 }
 
 .menu-item-2,.menu-item-2-a{
@@ -215,6 +256,10 @@ footer{
     margin-block: 5px;
     padding-left: 20px;
     padding-right: 25px;
+    transition: all 0.5s;
+}
+.menu-item-2:hover{
+    transform: scale(1.2) translateY(-10px);
 }
 
 /*-----------------------------------------------------------*/
@@ -275,12 +320,19 @@ footer{
     align-items: center;
     background-color: white;
     margin-block: 40px;
+    transition: all 0.3s;
 
+}
+
+.catalogo__item:hover{
+    transform: scale(1.1) ;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .catalogo__item__h2{
     font-family: 'Playfair Display', serif;
     font-size: 30px;
+
 }
 
 
@@ -294,7 +346,15 @@ footer{
     align-items: center;
     justify-content: center;
     font-size: 25px;
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: all 0.3s;
+    
+
+}
+
+.catalogo__item2:hover{
+    transform: scale(1.1) ;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
 }
 

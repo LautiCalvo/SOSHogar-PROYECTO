@@ -3,217 +3,90 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: none;
-}
 
-/*INDEX */
-
-/*Estilos de logo y buscador(padre)*/
-.inicio{
-    display: flex;
-    background-image: url("./img/fondo1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/*Estilos de logo (hijo)*/
-.logo-inicio{
-    width: 400px;
-    transition: all 0.3s;
-}
-
-.logo-inicio:hover{
-    width: 420px;
-}
-
-
-/*estilos de boton de buscar(hijo)*/
-.buscar{
-    position: relative;
-    bottom: 105px;
-    left: 170px;
-
-}
-
-
-/* estios de buscador (hijo)*/
-.buscador{ 
-    margin-bottom: 50px;
-    padding-inline: 30px;
-    position: relative;
-    bottom: 30px;
-    font-size: 20px;
-    width: 300px;
-    border-radius: 10px;
-    border:  none
-}
-
-
-
-
-
-
-
-
-
-
-
-/*Estilos de todo el menu(padre)*/
-.menu{
-    display: flex;
-    background-color: rgb(34, 32, 36);
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-    list-style-type: none;
-      
-}
-
-/* Estilos de los items(hijo) */
-.menu-item a{
-    display: inline;
-    font-size: 45px;
-    color: aliceblue;
-    text-decoration: none;
-    font-family: 'Playfair Display', serif;
-    border-left:solid 1px white;
-    padding-left: 80px;
-    
-    
-
-}
-.menu-item{
-    transition: all 0.3s;
-}
-
-.menu-item:hover{
-   
-    transform: scale(1.1) translateY(-10px);
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Estilo de productos de inicio(padre) */
-.productos{
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 10%;
-    padding-block: 5% ;
-
-    background-image: url(./img/fondo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-   
-   
-
-
-}
-
-
-/*Estilo del producto del centro(hijo)*/
- .imagen{
-    border-bottom: solid 1px black;
-    border-radius: 10px;
-    width: 497.5px;
-    height: 500px;
-
- }
-
-
-
-
-
-
- 
-
-
-
-
- /* Estilos de los textos de los productos (padre)*/
-.item-product{
-    border: solid 1px black;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    background-color: white;
-
-
-    
- 
-}
-
-
-
-
-
-/* Estilos del precio de la izquierda(hijo)*/
-.precios{
-    display: flex;
-    justify-content: center;
-    font-style: italic;
-    font-size: 40px;
-}
-
-.desc{
-    display: flex;
-    justify-content: center;
-    font-style: italic;
-    font-size: 25px;
-}
-
-
-/*Estilos de los logos de las redes(padre) */
-.redes{
-    background-color: rgb(24, 53, 80);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-/*Estilos de los logos(hijo) */
-.logo-redes{
-    margin-block: 20px;
-    transition: all 0.5s;
-    width: 50px;
-}
-.logo-redes:hover{
-    transform: scale(1.2) translateY(-10px);
-}
-
-
-/*Estilo del footer */
-footer{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    bottom: 50px;
-    color: aliceblue;
 }
 
 
 /* ------------------------------------------------------------------*/
 
+.navbar-link{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 90%;
+}
 
+.tituloCarrusel{
+display: flex;
+flex-direction: row;
+justify-content: center;
+position: relative;
+bottom: 250px;
+font-size: 300%;
+font-family: 'Ubuntu', sans-serif;
+text-shadow: 0px 0px 25px black;
+background-color: rgba(0, 0, 0, 0.018);
+}
+.parrafoCarrusel{
+    justify-content: center;
+    position: relative;
+    bottom: 250px;
+    font-size: 200%;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: 0px 0px 25px black;
+    background-color: rgba(0, 0, 0, 0.018);
+}
 
+.imgProductos{
+    height: 350px;
+}
+
+.textos-cards{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 150%;
+}
+
+.cardsProductos{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    padding-left: 8%;
+
+}
+.trajeta{
+    margin-top: 10%;
+}
+.verMas{
+    margin-block: 3%;
+    text-decoration: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #aaa;
+    
+}
+.redes{
+    background-color: #fde870;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 50%;
+}
+
+.title{
+    text-align: center;
+    font-family: 'ubuntu', sans-serif;
+    font-size: 300%;
+    font-weight: 5px;
+    color: #3c4858;
+    width: 40%;
+    margin-block: 5% 2%;
+}
+.subtitle{
+    text-align: center;
+    color:  #999;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 200%;
+    width: 50%;
+}
+
+.h5-card{
+    text-align: center;
+    font-size: 120%;
+}
 
 
 
@@ -403,8 +276,9 @@ footer{
     justify-content: center;
     align-items: center;
     font-size: 100px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(236, 241, 168);
+    font-family: 'Ubuntu', sans-serif;
+    color: #3c4858;
+
 }
 
 

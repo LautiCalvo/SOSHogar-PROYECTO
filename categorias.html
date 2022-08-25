@@ -6,107 +6,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorias-SOSHOGAR</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
-    </style>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!--Logo Pestaña-->
     <link rel="icon" href="./img/soslogo.png">
+
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--Menu de navegacion-->
     
 
-    <nav>
-        
-        <ul class="menu-2">
-            <li class="menu-item-2"><a href="./categorias.html" class="menu-item-2-a">Categorias</a></li>
-            <li class="menu-item-2"><a href="./productos.html" class="menu-item-2-a">Productos</a></li>
-            <li class="menu-item-2"><a href="./contacto.html" class="menu-item-2-a">Contacto</a></li>
-            <li class="menu-item-2"><a href="./acercade.html" class="menu-item-2-a">Acerca De</a></li>
+<!--Navbar-->
+
+<nav class="navbar navbar-expand-lg bg-secondary sticky-sm-top">
+    <div class="container-fluid">
+
+        <div class="navbar">
+            <div class="container">
+              <a class="navbar-brand" href="/">
+                <img src="./img/soslogo.png" alt="Inicio" width="100" height="100">
+              </a>
+            </div>
+          </div>
+
+      <div class="collapse navbar-collapse d-flex justify-content-end fs-3" id="navbarNav" >
+        <ul class="navbar-nav gap-5">
+          <li class="nav-item">
+            <a class="nav-link active navbar-link" aria-current="page" href="./categorias.html">Categorias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active navbar-link" href="./productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active navbar-link" href="./contacto.html">Contanco</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active navbar-link" href="./acercade.html">Acerca De</a>
+          </li>
+
         </ul>
-       
-    </nav>
+      </div>
+    </div>
+  </nav>
 
 
     <main class="catalogo">
 
-        <div><a href="./index.html"><img src="./img/soslogo.png" alt="Logo SOS Hogar" title="Inicio" class="menu-inicio"></a></div>
+
 
 
       <!--TITULO-->
+      <div>
         <h1 class="catalogo-h1">¡Aqui tienes nuestro catalogo!</h1>
-        
+      </div>
 
 
-<!--PRIMERA FILA -->
-<section class="subCatalogo" >
-
-    <div class="catalogo__item" data-aos="zoom-in" >
-        <img src="./img/budas.png" alt="Foto de Budas"  class="catalogo__item__img">
-        <h2 class="catalogo__item__h2">Budas</h2>
-    </div>
-     
-    <div class="catalogo__item"data-aos="zoom-in" >
-        <img src="./img/cuadros.png" alt="Foto de Cuadro"  class="catalogo__item__img">
-        <h2 class="catalogo__item__h2">Cuadros</h2>
+<!--Cards -->
+<div class="cardsProductos">
+      
+    <div class="card  trajeta" style="width: 350px;">
+      <img src="./img/budas.png" class="card-img-top imgProductos" alt="Foto de Budas">
+      <div class="card-body textos-cards">
+        <h5 class="card-title h5-card">Budas</h5>
+      </div>
     </div>
 
-    <div class="catalogo__item" data-aos="zoom-in">
-        <img src="./img/duendes.png" alt="Foto de Duende"  class="catalogo__item__img">
-        <h2 class="catalogo__item__h2">Duendes</h2>
-    </div>
+    <div class="card  trajeta" style="width: 350px;">
+        <img src="./img/cuadros.png" class="card-img-top imgProductos" alt="Foto de Cuadro">
+        <div class="card-body textos-cards">
+          <h5 class="card-title h5-card">Cuadros</h5>
+        </div>
+      </div>
 
-    <div class="catalogo__item" >
-        <img src="./img/elefante.png" alt="Foto de Elefante"  class="catalogo__item__img">
-        <h2 class="catalogo__item__h2">Elefantes</h2>
-    </div>
+      <div class="card  trajeta" style="width: 350px;">
+        <img src="./img/duendes.png" class="card-img-top imgProductos" alt="Foto de Duende">
+        <div class="card-body textos-cards">
+          <h5 class="card-title h5-card">Duendes</h5>
+        </div>
+      </div>
+
+      <div class="card  trajeta" style="width: 350px;">
+        <img src="./img/elefante.png" class="card-img-top imgProductos" alt="Foto de Elefante">
+        <div class="card-body textos-cards">
+          <h5 class="card-title h5-card">Elefantes</h5>
+        </div>
+      </div>
+
+      <div class="card  trajeta" style="width: 350px;">
+        <img src="./img/fuentes.png" class="card-img-top imgProductos" alt="Foto de fuentes">
+        <div class="card-body textos-cards">
+          <h5 class="card-title h5-card">Fuentes</h5>
+        </div>
+      </div>
+
+      <div class="card  trajeta" style="width: 350px;">
+        <img src="./img/hornillos.png" class="card-img-top imgProductos" alt="Foto de Hornillo">
+        <div class="card-body textos-cards">
+          <h5 class="card-title h5-card">Hornillos</h5>
+        </div>
+      </div>
+
+      <div class="card  trajeta" style="width: 350px;">
+        <img src="./img/juegodearos.png" class="card-img-top imgProductos" alt="Foto de Aros">
+        <div class="card-body textos-cards">
+          <h5 class="card-title h5-card">Juegos de Aros</h5>
+        </div>
+      </div>
+
+      <div class="card  trajeta" style="width: 350px;">
+        <img src="./img/lamparadesal.png" class="card-img-top imgProductos" alt="Foto de Lampara de Sal">
+        <div class="card-body textos-cards">
+          <h5 class="card-title h5-card">Lamparas de Sal</h5>
+        </div>
+      </div>
+
+      <div class="card  trajeta" style="width: 350px;">
+        <img src="./img/llamadores.png" class="card-img-top imgProductos" alt="Foto de Llamador">
+        <div class="card-body textos-cards">
+          <h5 class="card-title h5-card">Llamadores de Angeles</h5>
+        </div>
+      </div>
+
+      <div class="card  trajeta" style="width: 350px;">
+        <img src="./img/mulatas.png" class="card-img-top imgProductos" alt="Foto de Mulata">
+        <div class="card-body textos-cards">
+          <h5 class="card-title h5-card ">Mulatas</h5>
+        </div>
+      </div>
+
+      <div class="card  trajeta" style="width: 350px;">
+        <img src="./img/portavelas.png" class="card-img-top imgProductos" alt="Foto de Portavela">
+        <div class="card-body textos-cards">
+          <h5 class="card-title h5-card">Portavelas</h5>
+        </div>
+      </div>
+
+      <div class="card  trajeta" style="width: 350px;">
+        <img src="./img/quemadores.png" class="card-img-top imgProductos" alt="Foto de Quemador">
+        <div class="card-body textos-cards">
+          <h5 class="card-title h5-card">Quemadores</h5>
+        </div>
+      </div>
+
+
+      </div>
 
 
 
-    <div class="catalogo__item" data-aos="zoom-in">
-        <img src="./img/fuentes.png" alt="Foto de fuentes"  class="catalogo__item__img">
-        <h2 class="catalogo__item__h2">Fuentes</h2>
-    </div>
+  </div>
 
-    <div class="catalogo__item"data-aos="zoom-in" >
-        <img src="./img/hornillos.png" alt="Foto de Hornillo" class="catalogo__item__img">
-        <h2 class="catalogo__item__h2">Hornillos</h2>
-    </div>
-
-    <div class="catalogo__item"data-aos="zoom-in" >
-        <img src="./img/juegodearos.png" alt="Foto de Aros"  class="catalogo__item__img">
-        <h2 class="catalogo__item__h2">Juegos de Aros</h2>
-    </div>
-
-    <div class="catalogo__item"data-aos="zoom-in" >
-        <img src="./img/lamparadesal.png" alt="Foto de Lampara de Sal" class="catalogo__item__img">
-        <h2 class="catalogo__item__h2">Lamparas de Sal</h2>
-    </div>
-
-    <div class="catalogo__item"data-aos="zoom-in">
-
-        <img src="./img/llamadores.png" alt="Foto de Llamador" width="400px" height="400px" class="catalogo__item__img">
-        <h2 class="catalogo__item__h2">Llamadores de Angeles</h2>
-    </div>
-
-    <div class="catalogo__item" data-aos="zoom-in">
-        <img src="./img/mulatas.png" alt="Foto de Mulata" width="400px" height="400px" class="catalogo__item__img">
-        <h2 class="catalogo__item__h2">Mulatas</h2>
-    </div>
-
-    <div class="catalogo__item" data-aos="zoom-in">
-        <img src="./img/portavelas.png" alt="Foto de Portavela" width="400px" height="400px" class="catalogo__item__img">
-        <h2 class="catalogo__item__h2">Portavelas</h2>
-    </div>
-
-    <div class="catalogo__item"data-aos="zoom-in" >
-        <img src="./img/quemadores.png" alt="Foto de Quemador" width="400px" height="400px" class="catalogo__item__img">
-        <h2 class="catalogo__item__h2">Quemadores</h2>
-    </div>
-    
-</section>
-
-    </main>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

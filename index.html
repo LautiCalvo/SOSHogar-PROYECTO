@@ -5,84 +5,215 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S.O.S Hogar</title>
-    <link rel="stylesheet" href="./style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
-    </style>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!--Logo Pestaña-->
     <link rel="icon" href="./img/soslogo.png">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap" rel="stylesheet">
+    
 
 </head>
 <body>
+  <!--Navbar-->
 
-<!--Boton para volver al Inicio con el Logo-->
-<header class="inicio">
-    <a href="/"><img src="./img/soslogo.png" alt="Logo SOS Hogar" title="Inicio" class="logo-inicio" ></a>
+      <nav class="navbar navbar-expand-lg bg-secondary sticky-sm-top">
+        <div class="container-fluid">
+
+            <div class="navbar">
+                <div class="container">
+                  <a class="navbar-brand" href="/">
+                    <img src="./img/soslogo.png" alt="Inicio" width="100" height="100">
+                  </a>
+                </div>
+              </div>
+
+          <div class="collapse navbar-collapse d-flex justify-content-end fs-3" id="navbarNav" >
+            <ul class="navbar-nav gap-5">
+              <li class="nav-item">
+                <a class="nav-link active navbar-link" aria-current="page" href="./categorias.html">Categorias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active navbar-link" href="./productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active navbar-link" href="./contacto.html">Contanco</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active navbar-link" href="./acercade.html">Acerca De</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--Carrusel-->
+
+      <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/Carrusel/fotonegocioafuera_photos_v2_x2_colored_toned_light_ai.jpg" class="d-block w-100 h " alt="Foto del negocio" height="800px">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="tituloCarrusel ">Encuentra gran variedad de productos esotéricos y tambien artículos de limpieza</h2>
+              <p class="parrafoCarrusel ">-SOS Hogar-</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Carrusel/fotonegocioadentro_photos_v2_x2_colored_toned_light_ai (1).jpg" class="d-block w-100 " alt="Foto del negocio" height="800px">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="tituloCarrusel d-flex">Excelente calidad y precios accesibles en SOS Hogar Regaleria Artesanal</h2>
+              <p class="parrafoCarrusel d-flex">Gracias por ingresar a nuestro sitio web</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Carrusel/fotonegocioadentro2_photos_v2_x2_colored_toned_light_ai.jpg" class="d-block w-100 " alt="Foto del negocio" height="800px">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="tituloCarrusel d-flex">Ahorra tiempo y dinero haciendo tu compra en "SOS Hogar"</h2>
+              <p class="parrafoCarrusel d-flex">No dudes en realizar tu consulta...</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
 
-<!--buscador-->
+      
+      <div class="d-flex flex-column justify-content-center align-items-center">
+      <h1 class="title">Descubrí el más amplio stock de productos</h1>
+      <p class="subtitle">En SOS Hogar estamos comprometidos con la calidad de los productos y servicios que brindamos, además de liderar en nuestra área.</p>
+      </div>
 
-<input class="buscador" type="text" placeholder="¡Busca tus productos aqui!"> 
+     <!--Cards-->
+    <div class="cardsProductos">
+      
+      <div class="card  trajeta" style="width: 350px;">
+        <img src="./img/productos/lamparadesalelefante.png" class="card-img-top imgProductos" alt="...">
+        <div class="card-body textos-cards">
+          <h5 class="card-title">$1500 ARS</h5>
+          <p class="card-text">Lampara De Sal Elefante Blanco</p>
+          <a href="#" class="btn btn-primary">Comprar🛒</a>
+        </div>
+      </div>
 
+      <div class="card  trajeta" style="width: 350px;">
+        <img src="./img/productos/cascadadehumo.png" class="card-img-top imgProductos" alt="...">
+        <div class="card-body textos-cards">
+          <h5 class="card-title">$2000 ARS</h5>
+          <p class="card-text">Fuente Cascada Humo Porta Conos Decorativa</p>
+          <a href="#" class="btn btn-primary">Comprar🛒</a>
+        </div>
+      </div>
 
-<form class="buscar">
-    <button type="submit"><img src="./img/busquedalogo.png" alt="Buscar" width="20px" class="buscar2"></button>
-</form>
-</header>
-<!--Menu-->
-<nav>
-    <ul class="menu">
-        <li class="menu-item"><a href="./categorias.html">Categorias</a></li>
-        <li class="menu-item"><a href="./productos.html">Productos</a></li>
-        <li class="menu-item"><a href="./contacto.html">Contacto</a></li>
-        <li class="menu-item"><a href="./acercade.html">Acerca De</a></li>
-    </ul>
-</nav>
+      <div class="card trajeta" style="width: 350px;">
+        <img src="./img/productos/hornilloelectrico.png" class="card-img-top imgProductos" alt="...">
+        <div class="card-body textos-cards">
+          <h5 class="card-title">$1300 ARS</h5>
+          <p class="card-text">Hornillo Electrico Cuadrado Amor y Paz</p>
+          <a href="#" class="btn btn-primary">Comprar🛒</a>
+        </div>
+      </div>
 
-<!--Algunos Productos con su imagen y precio-->
-<div class="productos">
+      <div class="card trajeta" style="width: 350px;">
+        <img src="./img/productos/budas-negrosydorados-x3.png" class="card-img-top imgProductos" alt="...">
+        <div class="card-body textos-cards">
+          <h5 class="card-title">$2500 ARS</h5>
+          <p class="card-text">Niños Budas Doradors y Negros x3</p>
+          <a href="#" class="btn btn-primary">Comprar🛒</a>
+        </div>
+      </div>
+
+      <div class="card  trajeta" style="width: 350px;">
+        <img src="./img/productos/mulataconcantero.png" class="card-img-top imgProductos" alt="...">
+        <div class="card-body textos-cards">
+          <h5 class="card-title">$1800 ARS</h5>
+          <p class="card-text">Adorno Mulatas Con Cantero</p>
+          <a href="#" class="btn btn-primary">Comprar🛒</a>
+        </div>
+      </div>
+
+      <div class="card trajeta" style="width: 350px">
+        <img src="./img/productos/elefantenegro.png" class="card-img-top imgProductos" alt="...">
+        <div class="card-body textos-cards">
+          <h5 class="card-title">$1200 ARS</h5>
+          <p class="card-text">Figura Elefante Ceramica Negro Minimalista</p>
+          <a href="#" class="btn btn-primary">Comprar🛒</a>
+        </div>
+      </div>
+
+      <div class="card trajeta" style="width: 350px;">
+        <img src="./img/productos/quemadorazul.png" class="card-img-top imgProductos" alt="...">
+        <div class="card-body textos-cards">
+          <h5 class="card-title">$800 ARS</h5>
+          <p class="card-text">Quemador De Palo Santo Azul</p>
+          <a href="#" class="btn btn-primary">Comprar🛒</a>
+        </div>
+      </div>
+
+      <div class="card trajeta" style="width: 350px;">
+        <img src="./img/productos/quemadorsahumerio.png" class="card-img-top imgProductos" alt="...">
+        <div class="card-body textos-cards">
+          <h5 class="card-title">$2500 ARS</h5>
+          <p class="card-text">Quemador de Palo Santo + Prota</p>
+          <a href="#" class="btn btn-primary">Comprar🛒</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="d-flex justify-content-center verMas">
+      <h3><a href="./productos.html" class="verMas">Ver Mas Productos</a></h3>
+    </div>
+
+    <div class="d-flex justify-content-around align-items-center redes">
+      <a href="https://instagram.com/s.o.s.hogarregaleriaartesanal?igshid=YmMyMTA2M2Y=" target="_blank" class="logo-redes">
+          <img src="./img/iglogo.png" alt="Logo de Instagram" title="Instagram" width="50px" >
+      </a>
+      
     
-<div class="item-product">
-    <img src="./img/Buda negro.jpeg"  alt="Foto de Buda negro con Ropa dorada" class="imagen">
-    <h2 class="precios">$5000</h2>
-    <p class="desc">Adorno Buda Negro con Ropa dorada</p>
-</div>
+      <a href="https://www.facebook.com/soshogarregaleriaartesanal" target="_blank" class="logo-redes">
+          <img src="./img/facebooklogo.png" alt="Logo de Facebook" title="Facebook" width="50px" >
+      </a>
 
-<div class="item-product">
-    <img src="./img/cascadadehumo.jpeg" alt="Foto de Cascada de Humo" class="imagen" >
-    <h2 class="precios">$3499</h2>
-    <p class="desc">Cascada de Humo</p>
-</div>
-
-<div class="item-product">
-    <img src="./img/sahumerio.jpeg" alt="Foto de Quemador de Palo Santo + Porta Sahumerios" class="imagen" >
-    <h2 class="precios">$6350</h2>
-    <p class="desc">Quemador + Porta Sahumerios</p>
-</div>
-</div>
-
-<!--Redes Sociales-->
-<div class="redes">
-    <a href="https://instagram.com/s.o.s.hogarregaleriaartesanal?igshid=YmMyMTA2M2Y=" target="_blank" class="logo-redes">
-        <img src="./img/iglogo.png" alt="Logo de Instagram" title="Instagram" width="50px" >
-    </a>
-    
+      <footer>
+        <h3>©Todos los derechos reservados 2022</h3>
+    </footer>
   
-    <a href="https://www.facebook.com/soshogarregaleriaartesanal" target="_blank" class="logo-redes">
-        <img src="./img/facebooklogo.png" alt="Logo de Facebook" title="Facebook" width="50px" >
-    </a>
+      <a href="https://api.whatsapp.com/send?phone=2333409186" target="_blank" class="logo-redes">
+          <img src="./img/whatsapplogo.png" alt="Logo de Whatsapp" title="WhatsApp" width="50px" >
+      </a>
+  
+      <a href="https://www.google.com/maps/place/Calderon+%26+Primera+Junta,+Winifreda,+La+Pampa/@-36.2268053,-64.2433504,17z/data=!4m5!3m4!1s0x95c33188ff9beb25:0xaa1f2df343233bb3!8m2!3d-36.2258208!4d-64.2395014" target="_blank" class="logo-redes">
+          <img src="./img/ubicacionlogo.png" alt="Logo de GoogleMaps" title="Direccion" width="50px" >
+      </a>
+     
+  </div>
 
-    <a href="https://api.whatsapp.com/send?phone=2333409186" target="_blank" class="logo-redes">
-        <img src="./img/whatsapplogo.png" alt="Logo de Whatsapp" title="WhatsApp" width="50px" >
-    </a>
 
-    <a href="https://www.google.com/maps/place/Calderon+%26+Primera+Junta,+Winifreda,+La+Pampa/@-36.2268053,-64.2433504,17z/data=!4m5!3m4!1s0x95c33188ff9beb25:0xaa1f2df343233bb3!8m2!3d-36.2258208!4d-64.2395014" target="_blank" class="logo-redes">
-        <img src="./img/ubicacionlogo.png" alt="Logo de GoogleMaps" title="Direccion" width="50px" >
-    </a>
-   
-</div>
-<footer>
-    <h3>©2022</h3>
-</footer>
-
+<script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

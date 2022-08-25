@@ -5,171 +5,213 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos-SOSHOGAR</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
-    </style>
-    <link rel="icon" href="./img/soslogo.png">
+<!--Bootstrap-->
+<link rel="stylesheet" href="/styles/bootstrap.min.css">
+
+<!--Custom Styles-->
+<link rel="stylesheet" href="./styles/style.css">
+
+<!--Logo Pestaña-->
+<link rel="icon" href="./img/soslogo.png">
+
+<!--Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--MENU DE NAVEGACION-->
-    <nav>
-        
-        <ul class="menu-2">
-            <li class="menu-item-2"><a href="./categorias.html" class="menu-item-2-a">Categorias</a></li>
-            <li class="menu-item-2"><a href="./productos.html" class="menu-item-2-a">Productos</a></li>
-            <li class="menu-item-2"><a href="./contacto.html" class="menu-item-2-a">Contacto</a></li>
-            <li class="menu-item-2"><a href="./acercade.html" class="menu-item-2-a">Acerca De</a></li>
-        </ul>
-       
-    </nav>
+    <nav class="navbar navbar-expand-lg bg-secondary sticky-sm-top">
+        <div class="container-fluid">
+    
+            <div class="navbar">
+                <div class="container">
+                  <a class="navbar-brand" href="/">
+                    <img src="./img/soslogo.png" alt="Inicio" width="100" height="100">
+                  </a>
+                </div>
+              </div>
+    
+          <div class="collapse navbar-collapse d-flex justify-content-end fs-3" id="navbarNav" >
+            <ul class="navbar-nav gap-5">
+              <li class="nav-item">
+                <a class="nav-link active navbar-link" aria-current="page" href="./categorias.html">Categorias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active navbar-link" href="./productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active navbar-link" href="./contacto.html">Contanco</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active navbar-link" href="./acercade.html">Acerca De</a>
+              </li>
+    
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-
-    <main class="catalogo-2">
-
-        <div><a href="./index.html"><img src="./img/soslogo.png" alt="Logo SOS Hogar" title="Inicio" class="menu-inicio"></a></div>
-
-<!--TITULO -->
+      <div>
         <h1 class="catalogo-h1-2">Nuestros Productos</h1>
-        
+      </div>
 
-  <!--PRIMERA FILA -->      
-<section class="subCatalogo1">
+    <!--Cards-->
+    <div class="cardsProductos">
 
-    <div class="catalogo__item2"data-aos="zoom-in">
-        <img src="./img/productos/budasdoradorsx3.png" alt="Foto de Budas"  class="catalogo__item__img2">
-        <h2 class="catalogo__item__h2">$4300</h2>
-        <p class="catalogo__item__p">Buditas Dorados x3</p>
-    </div>
-     
-    <div class="catalogo__item2"data-aos="zoom-in">
-        <img src="./img/productos/budanegroydorado.png" alt="Foto de Cuadro"  class="catalogo__item__img2">
-        <h2 class="catalogo__item__h2">$5000</h2>
-        <p class="catalogo__item__p">Buda negro y dorado</p>
-    </div>
+        <div class="card  trajeta" style="width: 350px;">
+            <img src="./img/productos/lamparadesalelefante.png" class="card-img-top imgProductos" alt="...">
+            <div class="card-body textos-cards">
+              <h5 class="card-title">$1500 ARS</h5>
+              <p class="card-text">Lampara De Sal Elefante Blanco</p>
+              <a href="#" class="btn btn-primary">Comprar🛒</a>
+            </div>
+          </div>
+    
+          <div class="card  trajeta" style="width: 350px;">
+            <img src="./img/productos/cascadadehumo.png" class="card-img-top imgProductos" alt="...">
+            <div class="card-body textos-cards">
+              <h5 class="card-title">$2000 ARS</h5>
+              <p class="card-text">Fuente Cascada Humo Porta Conos Decorativa</p>
+              <a href="#" class="btn btn-primary">Comprar🛒</a>
+            </div>
+          </div>
+    
+          <div class="card trajeta" style="width: 350px;">
+            <img src="./img/productos/hornilloelectrico.png" class="card-img-top imgProductos" alt="...">
+            <div class="card-body textos-cards">
+              <h5 class="card-title">$1300 ARS</h5>
+              <p class="card-text">Hornillo Electrico Cuadrado Amor y Paz</p>
+              <a href="#" class="btn btn-primary">Comprar🛒</a>
+            </div>
+          </div>
+    
+          <div class="card trajeta" style="width: 350px;">
+            <img src="./img/productos/budas-negrosydorados-x3.png" class="card-img-top imgProductos" alt="...">
+            <div class="card-body textos-cards">
+              <h5 class="card-title">$2500 ARS</h5>
+              <p class="card-text">Niños Budas Doradors y Negros x3</p>
+              <a href="#" class="btn btn-primary">Comprar🛒</a>
+            </div>
+          </div>
+    
+          <div class="card  trajeta" style="width: 350px;">
+            <img src="./img/productos/mulataconcantero.png" class="card-img-top imgProductos" alt="...">
+            <div class="card-body textos-cards">
+              <h5 class="card-title">$1800 ARS</h5>
+              <p class="card-text">Adorno Mulatas Con Cantero</p>
+              <a href="#" class="btn btn-primary">Comprar🛒</a>
+            </div>
+          </div>
+    
+          <div class="card trajeta" style="width: 350px">
+            <img src="./img/productos/elefantenegro.png" class="card-img-top imgProductos" alt="...">
+            <div class="card-body textos-cards">
+              <h5 class="card-title">$1200 ARS</h5>
+              <p class="card-text">Figura Elefante Ceramica Negro Minimalista</p>
+              <a href="#" class="btn btn-primary">Comprar🛒</a>
+            </div>
+          </div>
+    
+          <div class="card trajeta" style="width: 350px;">
+            <img src="./img/productos/quemadorazul.png" class="card-img-top imgProductos" alt="...">
+            <div class="card-body textos-cards">
+              <h5 class="card-title">$800 ARS</h5>
+              <p class="card-text">Quemador De Palo Santo Azul</p>
+              <a href="#" class="btn btn-primary">Comprar🛒</a>
+            </div>
+          </div>
+    
+          <div class="card trajeta" style="width: 350px;">
+            <img src="./img/productos/quemadorsahumerio.png" class="card-img-top imgProductos" alt="...">
+            <div class="card-body textos-cards">
+              <h5 class="card-title">$2500 ARS</h5>
+              <p class="card-text">Quemador de Palo Santo + Prota</p>
+              <a href="#" class="btn btn-primary">Comprar🛒</a>
+            </div>
+          </div>
 
-    <div class="catalogo__item2"data-aos="zoom-in">
-        <img src="./img/productos/budas-negrosydorados-x3.png" alt="Foto de Duende"  class="catalogo__item__img2">
-        <h2 class="catalogo__item__h2">$4300</h2>
-        <p class="catalogo__item__p">Buditas negros y dorados x3</p>
-    </div>
+          <div class="card  trajeta" style="width: 350px;">
+            <img src="./img/velas.png" class="card-img-top imgProductos" alt="...">
+            <div class="card-body textos-cards">
+              <h5 class="card-title">$1860 ARS</h5>
+              <p class="card-text">Veloncito Aromatico 3 Unidades</p>
+              <a href="#" class="btn btn-primary">Comprar🛒</a>
+            </div>
+          </div>
 
-    <div class="catalogo__item2"data-aos="zoom-in">
-        <img src="./img/productos/cascadadehumo.png" alt="Foto de Elefante"  class="catalogo__item__img2">
-        <h2 class="catalogo__item__h2">$3499</h2>
-        <p class="catalogo__item__p">Cascada de Humo</p>
-    </div>
+          <div class="card  trajeta" style="width: 350px;">
+            <img src="./img/productos/mulataconjirafa.png" class="card-img-top imgProductos" alt="...">
+            <div class="card-body textos-cards">
+              <h5 class="card-title">$2340 ARS</h5>
+              <p class="card-text">Mulata Con Jirafa</p>
+              <a href="#" class="btn btn-primary">Comprar🛒</a>
+            </div>
+          </div>
 
+          <div class="card  trajeta" style="width: 350px;">
+            <img src="./img/productos/duendeverde.png" class="card-img-top imgProductos" alt="...">
+            <div class="card-body textos-cards">
+              <h5 class="card-title">$1180 ARS</h5>
+              <p class="card-text">Duende Artesanal Colgante Verde</p>
+              <a href="#" class="btn btn-primary">Comprar🛒</a>
+            </div>
+          </div>
 
-    <div class="catalogo__item2"data-aos="zoom-in">
-        <img src="./img/productos/duenderosa.png" alt="Foto de fuentes"  class="catalogo__item__img2">
-        <h2 class="catalogo__item__h2">$2500</h2>
-        <p class="catalogo__item__p">Duende Rosa</p>
-    </div>
-    <div class="catalogo__item2"data-aos="zoom-in">
-        <img src="./img/productos/duendeverde.png" alt="Foto de Hornillo"  class="catalogo__item__img2">
-        <h2 class="catalogo__item__h2">$2650</h2>
-        <p class="catalogo__item__p">Duende Verde</p>
-    </div>
-    <div class="catalogo__item2"data-aos="zoom-in">
-        <img src="./img/productos/elefantenegro.png" alt="Foto de Aros"  class="catalogo__item__img2">
-        <h2 class="catalogo__item__h2">$3800</h2>
-        <p class="catalogo__item__p">Elefante Negro con Montura</p>
-    </div>
-    <div class="catalogo__item2"data-aos="zoom-in">
-        <img src="./img/productos/hornilloelectrico.png" alt="Foto de Lampara de Sal"  class="catalogo__item__img2">
-        <h2 class="catalogo__item__h2">$1700</h2>
-        <p class="catalogo__item__p">Hornillo Electrico</p>
-    </div>
+          <div class="card  trajeta" style="width: 350px;">
+            <img src="./img/productos/llamadordeangeles.png" class="card-img-top imgProductos" alt="...">
+            <div class="card-body textos-cards">
+              <h5 class="card-title">$2700 ARS</h5>
+              <p class="card-text">Llamador de Angeles</p>
+              <a href="#" class="btn btn-primary">Comprar🛒</a>
+            </div>
+          </div>
 
+          <div class="card  trajeta" style="width: 350px;">
+            <img src="./img/productos/budanegroydorado.png" class="card-img-top imgProductos" alt="...">
+            <div class="card-body textos-cards">
+              <h5 class="card-title">$3500 ARS</h5>
+              <p class="card-text">Buda Hindu Reposando</p>
+              <a href="#" class="btn btn-primary">Comprar🛒</a>
+            </div>
+          </div>
 
-    <div class="catalogo__item2"data-aos="zoom-in">
-        <img src="./img/productos/juegodearos.png" alt="Foto de Llamador"  class="catalogo__item__img2">
-        <h2 class="catalogo__item__h2">$1000</h2>
-        <p class="catalogo__item__p">Juego de Aros + Cadena y Dije</p>
-        
-    </div>
+          <div class="card  trajeta" style="width: 350px;">
+            <img src="./img/productos/mulataconcuenco.png" class="card-img-top imgProductos" alt="...">
+            <div class="card-body textos-cards">
+              <h5 class="card-title">$4280 ARS</h5>
+              <p class="card-text">Mulatas Con Cuenco</p>
+              <a href="#" class="btn btn-primary">Comprar🛒</a>
+            </div>
+          </div>
 
-    <div class="catalogo__item2"data-aos="zoom-in">
-        <img src="./img/productos/juegodearos2.png" alt="Foto de Mulata" class="catalogo__item__img2">
-        <h2 class="catalogo__item__h2">$1100</h2>
-        <p class="catalogo__item__p">Juego de Aros + Cadena y Dije</p>
-    </div>
+          <div class="card  trajeta" style="width: 350px;">
+            <img src="./img/hornillos.png" class="card-img-top imgProductos" alt="...">
+            <div class="card-body textos-cards">
+              <h5 class="card-title">$2650 ARS</h5>
+              <p class="card-text">Hornito Cerámica </p>
+              <a href="#" class="btn btn-primary">Comprar🛒</a>
+            </div>
+          </div>
 
-    <div class="catalogo__item2"data-aos="zoom-in">
-        <img src="./img/productos/juegodearos3.png" alt="Foto de Portavela" class="catalogo__item__img2">
-        <h2 class="catalogo__item__h2">$1000</h2>
-        <p class="catalogo__item__p">Juego de Aros + Cadena y Dije</p>
-    </div>
+          <div class="card  trajeta" style="width: 350px;">
+            <img src="./img/productos/juegodearos.png" class="card-img-top imgProductos" alt="...">
+            <div class="card-body textos-cards">
+              <h5 class="card-title">$1500 ARS</h5>
+              <p class="card-text">Juego De Aros + Dije</p>
+              <a href="#" class="btn btn-primary">Comprar🛒</a>
+            </div>
+          </div>
+    
+        </div>
+    
+   
 
-    <div class="catalogo__item2"data-aos="zoom-in">
-        <img src="./img/productos/lamparadesalelefante.png" alt="Foto de Quemador"  class="catalogo__item__img2">
-        <h2 class="catalogo__item__h2">$4300</h2>
-        <p class="catalogo__item__p">Lampara de Sal con Elefante</p>
-    </div>
-
-
-
-    <div class="catalogo__item2"data-aos="zoom-in">
-        <img src="./img/productos/llamadordeangeles.png" alt="Foto de Llamador"  class="catalogo__item__img2">
-        <h2 class="catalogo__item__h2">$2300</h2>
-        <p class="catalogo__item__p">Llamador de Angeles</p>
-    </div>
-
-    <div class="catalogo__item2"data-aos="zoom-in">
-        <img src="./img/productos/mulataconcantero.png" alt="Foto de Mulata"  class="catalogo__item__img2">
-        <h2 class="catalogo__item__h2">$2500</h2>
-        <p class="catalogo__item__p">Mulatas con Cantero</p>
-    </div>
-
-    <div class="catalogo__item2"data-aos="zoom-in">
-        <img src="./img/productos/mulataconcuenco.png" alt="Foto de Portavela"  class="catalogo__item__img2">
-        <h2 class="catalogo__item__h2">$2500</h2>
-        <p class="catalogo__item__p">Mulata con Cuencos</p>
-    </div>
-
-    <div class="catalogo__item2"data-aos="zoom-in">
-        <img src="./img/productos/mulataconjirafa.png" alt="Foto de Quemador"  class="catalogo__item__img2">
-        <h2 class="catalogo__item__h2">$1800</h2>
-        <p class="catalogo__item__p">Mulata con Jirafa</p>
-    </div>
-
-
-
-
-
-
-
-    <div class="catalogo__item2"data-aos="zoom-in">
-        <img src="./img/productos/quemadorazul.png" alt="Foto de Llamador" width="400px" height="400px" class="catalogo__item__img2">
-        <h2>$1300</h2>
-        <p class="catalogo__item__p">Quemador Azul</p>
-    </div>
-
-    <div class="catalogo__item2"data-aos="zoom-in">
-        <img src="./img/productos/quemadorrosa.png" alt="Foto de Mulata" width="400px" height="400px" class="catalogo__item__img2">
-        <h2>$1300</h2>
-        <p class="catalogo__item__p">Quemador Rosa</p>
-    </div>
-
-    <div class="catalogo__item2"data-aos="zoom-in">
-        <img src="./img/productos/quemadorsahumerio.png" alt="Foto de Portavela" width="400px" height="400px" class="catalogo__item__img2">
-        <h2>$4000</h2>
-        <p class="catalogo__item__p">Quemador + Porta Sahumerios</p>
-    </div>
-
-    <div class="catalogo__item2"data-aos="zoom-in">
-        <img src="./img/productos/velasrosas.png" alt="Foto de Quemador" width="400px" height="400px" class="catalogo__item__img2">
-        <h2>$800</h2>
-        <p class="catalogo__item__p">Velas Veloncito vintage x3</p>
-    </div>
-
-</section>
-</main>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

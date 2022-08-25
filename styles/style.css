@@ -296,8 +296,8 @@ background-color: rgba(0, 0, 0, 0.018);
     justify-content: center;
     align-items: center;
     font-size: 100px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(185, 193, 230);
+    font-family: 'Ubuntu', sans-serif;
+    color: #3c4858;
 }
 
 /* ---------------------------------------------------------------------*/
@@ -337,7 +337,10 @@ background-color: rgba(0, 0, 0, 0.018);
     display: flex;
     justify-content: space-around;
     font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.h2-contacto{
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /* ESTILOS DE GMAIL(HIJO)*/
@@ -345,6 +348,7 @@ background-color: rgba(0, 0, 0, 0.018);
     position: relative;
     left: 150px;
     top: 30px;
+    font-family: 'Montserrat Alternates', sans-serif;
     
 }
 
@@ -365,15 +369,19 @@ background-color: rgba(0, 0, 0, 0.018);
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 /*ESTILOS DE LAS REDES*/
 .contacto__seguinos{
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    background-color: rgb(235, 202, 159);
-   font-family: Georgia, 'Times New Roman', Times, serif;
+   position: relative;
+   top: 300px;
+   font-family: 'Montserrat Alternates', sans-serif;
+
 }
 
 /* ----------------------------------------------------------------------*/
@@ -399,7 +407,8 @@ background-color: rgba(0, 0, 0, 0.018);
 .acercade__titulo{
     justify-content: center;
     font-size: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Ubuntu', sans-serif;
+    
 }
 
 /*PARRAFO DE ACERCADE*/
@@ -407,6 +416,8 @@ background-color: rgba(0, 0, 0, 0.018);
     width: 50%;
    font-size: 30px;
    font-family: Georgia, 'Times New Roman', Times, serif;
+   font-family: 'Montserrat Alternates', sans-serif;
+   text-align: center;
 }
 
 

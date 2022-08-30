@@ -12,6 +12,7 @@
     <!--Custom Styles-->
     <link rel="stylesheet" href="./styles/style.css">
 
+
     <!--Logo Pestaña-->
     <link rel="icon" href="./img/soslogo.png">
 
@@ -24,6 +25,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap" rel="stylesheet">
+
+      <!--Animacion Scroll-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!--Menu de navegacion-->
@@ -31,36 +35,34 @@
 
 <!--Navbar-->
 
-<nav class="navbar navbar-expand-lg bg-secondary sticky-sm-top">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand-lg sticky-sm-top navCustom">
+  <div class="container-fluid">
 
-        <div class="navbar">
-            <div class="container">
-              <a class="navbar-brand" href="/">
-                <img src="./img/soslogo.png" alt="Inicio" width="100" height="100">
-              </a>
-            </div>
-          </div>
+    <a class="navbar-brand " href="/"><img src="./img/soslogo.png" alt="" width="100" height="100"></a>
 
-      <div class="collapse navbar-collapse d-flex justify-content-end fs-3" id="navbarNav" >
-        <ul class="navbar-nav gap-5">
-          <li class="nav-item">
-            <a class="nav-link active navbar-link" aria-current="page" href="./categorias.html">Categorias</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active navbar-link" href="./productos.html">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active navbar-link" href="./contacto.html">Contanco</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active navbar-link" href="./acercade.html">Acerca De</a>
-          </li>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        </ul>
-      </div>
+    <div class="collapse navbar-collapse  navbtn fs-3" id="navbarSupportedContent">
+      <ul class="navbar-nav gap-5 ">
+        <li class="nav-item navbar-link">
+          <a class="nav-link active" aria-current="page" href="./categorias.html">Categorias</a>
+        </li>
+        <li class="nav-item navbar-link">
+          <a class="nav-link active" href="./productos.html">Productos</a>
+        </li>
+        <li class="nav-item navbar-link">
+          <a class="nav-link active" href="./contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item navbar-link">
+          <a class="nav-link active" href="./acercade.html">Acerca De</a>
+        </li>
+      </ul>
+
     </div>
-  </nav>
+  </div>
+</nav>
 
 
     <main class="catalogo">
@@ -77,84 +79,84 @@
 <!--Cards -->
 <div class="cardsProductos">
       
-    <div class="card  trajeta" style="width: 350px;">
+    <div class="card  trajeta cardCategorias" >
       <img src="./img/budas.png" class="card-img-top imgProductos" alt="Foto de Budas">
       <div class="card-body textos-cards">
         <h5 class="card-title h5-card">Budas</h5>
       </div>
     </div>
 
-    <div class="card  trajeta" style="width: 350px;">
+    <div class="card  trajeta cardCategorias">
         <img src="./img/cuadros.png" class="card-img-top imgProductos" alt="Foto de Cuadro">
         <div class="card-body textos-cards">
           <h5 class="card-title h5-card">Cuadros</h5>
         </div>
       </div>
 
-      <div class="card  trajeta" style="width: 350px;">
+      <div class="card  trajeta cardCategorias" >
         <img src="./img/duendes.png" class="card-img-top imgProductos" alt="Foto de Duende">
         <div class="card-body textos-cards">
           <h5 class="card-title h5-card">Duendes</h5>
         </div>
       </div>
 
-      <div class="card  trajeta" style="width: 350px;">
+      <div class="card  trajeta cardCategorias" >
         <img src="./img/elefante.png" class="card-img-top imgProductos" alt="Foto de Elefante">
         <div class="card-body textos-cards">
           <h5 class="card-title h5-card">Elefantes</h5>
         </div>
       </div>
 
-      <div class="card  trajeta" style="width: 350px;">
+      <div class="card  trajeta cardCategorias" >
         <img src="./img/fuentes.png" class="card-img-top imgProductos" alt="Foto de fuentes">
         <div class="card-body textos-cards">
           <h5 class="card-title h5-card">Fuentes</h5>
         </div>
       </div>
 
-      <div class="card  trajeta" style="width: 350px;">
+      <div class="card  trajeta cardCategorias">
         <img src="./img/hornillos.png" class="card-img-top imgProductos" alt="Foto de Hornillo">
         <div class="card-body textos-cards">
           <h5 class="card-title h5-card">Hornillos</h5>
         </div>
       </div>
 
-      <div class="card  trajeta" style="width: 350px;">
+      <div class="card  trajeta cardCategorias">
         <img src="./img/juegodearos.png" class="card-img-top imgProductos" alt="Foto de Aros">
         <div class="card-body textos-cards">
           <h5 class="card-title h5-card">Juegos de Aros</h5>
         </div>
       </div>
 
-      <div class="card  trajeta" style="width: 350px;">
+      <div class="card  trajeta cardCategorias">
         <img src="./img/lamparadesal.png" class="card-img-top imgProductos" alt="Foto de Lampara de Sal">
         <div class="card-body textos-cards">
           <h5 class="card-title h5-card">Lamparas de Sal</h5>
         </div>
       </div>
 
-      <div class="card  trajeta" style="width: 350px;">
+      <div class="card  trajeta cardCategorias">
         <img src="./img/llamadores.png" class="card-img-top imgProductos" alt="Foto de Llamador">
         <div class="card-body textos-cards">
           <h5 class="card-title h5-card">Llamadores de Angeles</h5>
         </div>
       </div>
 
-      <div class="card  trajeta" style="width: 350px;">
+      <div class="card  trajeta cardCategorias">
         <img src="./img/mulatas.png" class="card-img-top imgProductos" alt="Foto de Mulata">
         <div class="card-body textos-cards">
           <h5 class="card-title h5-card ">Mulatas</h5>
         </div>
       </div>
 
-      <div class="card  trajeta" style="width: 350px;">
+      <div class="card  trajeta cardCategorias">
         <img src="./img/portavelas.png" class="card-img-top imgProductos" alt="Foto de Portavela">
         <div class="card-body textos-cards">
           <h5 class="card-title h5-card">Portavelas</h5>
         </div>
       </div>
 
-      <div class="card  trajeta" style="width: 350px;">
+      <div class="card  trajeta cardCategorias">
         <img src="./img/quemadores.png" class="card-img-top imgProductos" alt="Foto de Quemador">
         <div class="card-body textos-cards">
           <h5 class="card-title h5-card">Quemadores</h5>
@@ -168,6 +170,11 @@
 
   </div>
 
-  <script src="./js/bootstrap.bundle.min.js"></script>
+<!--Scripts-->
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

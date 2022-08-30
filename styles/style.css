@@ -7,11 +7,49 @@
 }
 
 
-/* ------------------------------------------------------------------*/
+
+
+/*Navbar*/
+
+.navbtn{
+    display: flex;
+    justify-content: flex-end;
+
+}
 
 .navbar-link{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 90%;
+    transition-property: all;
+    transition-duration: 0.3s;
+    
+    
+    
+}
+
+.navbar-link:hover{
+    transform: scale(1.05) ;
+    
+}
+
+.navCustom{
+    background-color: #546e7a ;
+    box-shadow: 0px 0px 15px black;
+    
+}
+
+
+
+
+
+/*Carrusel index*/
+
+.carruselCustom{
+    
+    box-shadow: 0px 0px 15px black;
+}
+
+.imgCarrusel{
+    height: 800px;
 }
 
 .tituloCarrusel{
@@ -35,42 +73,13 @@ background-color: rgba(0, 0, 0, 0.018);
     background-color: rgba(0, 0, 0, 0.018);
 }
 
-.imgProductos{
-    height: 350px;
-}
 
-.textos-cards{
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 150%;
-}
 
-.cardsProductos{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25% ;
-    padding-left: 8%;
-
-}
-.trajeta{
-    margin-top: 10%;
-}
-.verMas{
-    margin-block: 3%;
-    text-decoration: none;
-    font-family: 'Montserrat Alternates', sans-serif;
-    color: #aaa;
-    
-}
-.redes{
-    background-color: #fde870;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 50%;
-}
-
+/* Tiutlo y Parrafo index*/
 .title{
     text-align: center;
     font-family: 'ubuntu', sans-serif;
     font-size: 300%;
-    font-weight: 5px;
     color: #3c4858;
     width: 40%;
     margin-block: 5% 2%;
@@ -83,6 +92,94 @@ background-color: rgba(0, 0, 0, 0.018);
     width: 50%;
 }
 
+
+
+/*Cards*/
+.imgProductos{
+    height: 350px;
+}
+
+.textos-cards{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 150%;
+}
+
+
+.card-description{
+    color:  #999;
+
+}
+
+.cardsProductos{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    padding-left: 8%;
+
+}
+.trajeta{
+    margin-top: 10%;
+    width: 350px;
+}
+
+.card-btn{
+    transition: all 0.3s;
+
+}
+
+.card-btn:hover{
+    background-color: white;
+    color: #0a53be;
+}
+
+
+.verMas{
+    margin-block: 3%;
+    text-decoration: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #aaa;
+    transition: all 0.3s;
+    
+}
+
+.verMas:hover{
+    color: rgb(94, 93, 93);
+    transform: translateY(-3px);
+}
+
+
+
+
+
+/*Footer y Redes*/
+.redes{
+    background-color: #546e7a ;
+    font-family: 'Montserrat Alternates', sans-serif;
+    box-shadow: 0px 0px 20px black;
+    padding-block: 0.5%;
+}
+
+.logo-redes{
+    width: 50px;
+    transition: all 0.1s;
+
+}
+
+.logo-redes:hover{
+    transform: scale(1.02);
+}
+
+
+/*Cards Categorias*/
+
+.cardCategorias{
+    opacity: 0.88;
+    transition: all 0.3s;
+}
+
+.cardCategorias:hover{
+    opacity: 1;
+    transform: scale(1.02);
+}
 .h5-card{
     text-align: center;
     font-size: 120%;
@@ -90,207 +187,26 @@ background-color: rgba(0, 0, 0, 0.018);
 
 
 
-
-
-
-/*SEGUNDO ESTILO DE MENU PARA EL RESTO DE PAGINAS */
-.menu-2{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    background-color:rgb(34, 32, 36); 
-    list-style-type: none;
-    font-size: 20px;
-    gap: 50px;
-    
-}
-
-
-
-.menu-inicio{
-    width: 100px;
-    height: 80px;
-    position: relative;
-    bottom: 58px;
-    left: 50px;
-    transition: all 1s;
-}
-.menu-inicio:hover{
-    transform: scale(1.1) translateY(-8px);
-    
-}
-
-.menu-item-2,.menu-item-2-a{
-    color: aliceblue;
-    font-family: 'Playfair Display', serif;
-    text-decoration: none;
-    border-left:solid 1px white;
-    margin-block: 5px;
-    padding-left: 20px;
-    padding-right: 25px;
-    transition: all 0.5s;
-}
-.menu-item-2:hover{
-    transform: scale(1.2) translateY(-10px);
-}
-
-/*-----------------------------------------------------------*/
-
-
-
-/*CATEGORIAS Y PRODUCTOS*/
-
-
-
-
-/* ESTILOS DEL MAIN DE CATEGORIAS*/
-
-.catalogo{
-     background-image: url(./img/fondo2.jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center center;
-}
-
-
-
-
-
-/* ESTILOS DE CATEGORIAS Y PRODUCTOS*/
-.subCatalogo{  
-    display: grid;  
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr ;
-    padding-left: 10%;
-    
-
-
-}
-
-
-.catalogo__item__img{
-    width: 297.5px;
-    height: 300px;
-    border-radius:  10px;
-    border-bottom: solid 1px black;
-    
-    
-}
-
-
-
-
-
-
-/* ESTILOS CATAGORIAS*/
-.catalogo__item{
-    border: solid 1px black;
-    border-radius:  10px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    margin-block: 40px;
-    transition: all 0.3s;
-
-}
-
-.catalogo__item:hover{
-    transform: scale(1.1) ;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
-
-.catalogo__item__h2{
-    font-family: 'Playfair Display', serif;
-    font-size: 30px;
-
-}
-
-
-/* ESTILOS PRODUCTOS*/
-.catalogo__item2{
-    border: solid 1px black;
-    border-radius: 10px;
-    background-color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    transition: all 0.3s;
-    
-
-}
-
-.catalogo__item2:hover{
-    transform: scale(1.1) ;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-
-}
-
-/* ESTILOS PARRAFOS DE PRODUCTOS*/
-.catalogo__item__p{
-    font-family: 'Playfair Display', serif;
-}
-    
-/*ESTILO DE IMAGENES DE PRODUCTOS Y CATEGORIAS */  
-
-.subCatalogo1{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    padding-left: 1.5%;
-    
-    
-
-}
-
-.catalogo__item2{
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 400px ;
-    height: 400px ;
-    margin-block: 20px;
-    
-
-}
-
-
-
-
-.catalogo__item__img2{
-    width: 397.5px;
-    height: 325px;
-    border-bottom: solid 1px black;
-    border-radius: 10px;
-
-}
-
-
-/*ESTILOS DEL TITULO DE CATALOGO */
+/*ESTILOS DEL TITULO DE CATALOGO Y PRODUCTOS */
 .catalogo-h1{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 100px;
     font-family: 'Ubuntu', sans-serif;
-    color: #3c4858;
-
-}
-
-
-/* ESTILOS DEL MAIN DE PRODUCTOS*/
-.catalogo-2{
-    background-image: url(./img/fondo3.jpg);
-    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 0px 0px 15px black;
+    background-image: url(/img/fondocategorias.jpg);
+    padding-block: 20%;
     background-size: cover;
-    
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 15px black;
+    text-align: center;
+
 }
 
-/*ESTILOS DEL TITULO DE PRODUCTOS*/
+
+
 .catalogo-h1-2{
     display: flex;
     justify-content: center;
@@ -300,7 +216,7 @@ background-color: rgba(0, 0, 0, 0.018);
     color: #3c4858;
 }
 
-/* ---------------------------------------------------------------------*/
+
 
 
 
@@ -308,12 +224,7 @@ background-color: rgba(0, 0, 0, 0.018);
 
 /* CONTACTO*/
 
-/*ESTILOS DEL BODY DE CONTACTO*/
-.body__contacto{
-    background-image: url(./img/fondo4.jpg);
-}
 
-/*ESTIOS DEL TITULO DE CONTACTO*/
 .titluloContacto{
     display: flex;
     justify-content:center ;
@@ -322,7 +233,7 @@ background-color: rgba(0, 0, 0, 0.018);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/*ESTILOS DE PARRAFO DE CONTACTO*/
+
 .parrafoContacto{
     display: flex;
     justify-content: center;
@@ -332,7 +243,7 @@ background-color: rgba(0, 0, 0, 0.018);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/*ESTILOS DE GMAIL Y WHATSAPP(PADRE)*/
+
 .contacto__gmail__wsp{
     display: flex;
     justify-content: space-around;
@@ -343,7 +254,7 @@ background-color: rgba(0, 0, 0, 0.018);
     font-family: 'Ubuntu', sans-serif;
 }
 
-/* ESTILOS DE GMAIL(HIJO)*/
+
 .contacto__gmail{
     position: relative;
     left: 150px;
@@ -352,18 +263,18 @@ background-color: rgba(0, 0, 0, 0.018);
     
 }
 
-/* ESTILOS DE WHATSAPP(HIJO)*/
+
 .contacto__wsp{
     position: relative;
     left: 270px;
     width: 100px;
     height: 100px;
 }
-/*--------------------------------------------------------------- */
+
 
 /* CONTACTO Y ACERCADE*/
 
-/*ESTILOS DEL TEXTO DEL MAPA*/
+
 .contacto__local{
     font-size: 25px;
     display: flex;
@@ -372,7 +283,7 @@ background-color: rgba(0, 0, 0, 0.018);
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
-/*ESTILOS DE LAS REDES*/
+
 .contacto__seguinos{
     display: flex;
     justify-content: center;
@@ -384,12 +295,12 @@ background-color: rgba(0, 0, 0, 0.018);
 
 }
 
-/* ----------------------------------------------------------------------*/
+
 
 
 /* ACERCA DE*/
 
-/*ESTILOS DE BODY DE ACERCADE*/
+
 .body__acercade{
     background-image: url(./img/fondo4.jpg);
     background-size: cover;
@@ -403,7 +314,7 @@ background-color: rgba(0, 0, 0, 0.018);
     align-items: center;
 }
 
-/*ESTILOS DEL TITULO DE ACERCADE */
+
 .acercade__titulo{
     justify-content: center;
     font-size: 50px;
@@ -411,7 +322,7 @@ background-color: rgba(0, 0, 0, 0.018);
     
 }
 
-/*PARRAFO DE ACERCADE*/
+
 .acercade__parrafo{
     width: 50%;
    font-size: 30px;
@@ -424,3 +335,108 @@ background-color: rgba(0, 0, 0, 0.018);
 
 
 
+
+@media screen and (max-width:1600px) {
+
+    .cardsProductos{
+        grid-template-columns: 33.33% 33.33% 33.33%  ; 
+        
+    }
+    
+}
+
+
+
+@media screen and (max-width:1024px) {
+    .navbar-link{
+        font-size: 70%;
+        
+        
+    }
+
+
+
+    .cardsProductos{
+        grid-template-columns: 50% 50%  ; 
+        
+    }
+    
+
+}
+
+@media screen and (max-width:768px){
+
+    .title{
+        font-size: 200%;
+        width: 50%;
+    }
+
+    .subtitle{
+        font-size: 150%;
+        width: 80%;
+    }
+
+    .trajeta{
+        width: 250px;
+        
+    }
+
+    .cardsProductos{
+        padding-left: 13.5%;
+    }
+
+    
+
+}
+
+@media screen and (max-width:480px) {
+     .imgCarrusel{
+        height: 400px;
+     }
+
+     .cardsProductos{
+        grid-template-columns: 100%;
+        padding-left: 25%;
+     }
+
+     .title{
+        font-size: 180%;
+        width: 90%;
+     }
+
+     .subtitle{
+        font-size: 150%;
+        width: 100%;
+     }
+
+     .textos-cards{
+        font-size: 100%;
+     }
+
+     .verMas{
+        font-size: 80%;
+        margin-block: 8%;
+     }
+
+     .footer{
+        margin-top: 8%;
+        font-size: 80%;
+        text-align: center;
+        width: 80%;
+        padding-left: 20%;
+     }
+
+     .logo-redes{
+        width: 35px;
+     }
+
+     .redes{
+        gap: 40px;
+     }
+
+     .catalogo-h1{
+        font-size: 300%;
+     }
+
+
+}

@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&family=Ubuntu:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navCustom {
+  background-color: #546e7a;
+  box-shadow: 0px 0px 15px black;
+}
+.navCustom .navbtn {
+  display: flex;
+  justify-content: flex-end;
+}
+.navCustom .navbar-link {
+  font-family: "Ubuntu", sans-serif;
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+.navCustom .navbar-link:hover {
+  transform: scale(1.05);
+}
+
+.carruselCustom {
+  box-shadow: 0px 0px 15px black;
+}
+.carruselCustom .imgCarrusel {
+  height: 800px;
+}
+.carruselCustom .tituloCarrusel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  bottom: 250px;
+  font-size: 300%;
+  font-family: "Ubuntu", sans-serif;
+  text-shadow: 0px 0px 25px black;
+  background-color: rgba(0, 0, 0, 0.018);
+}
+.carruselCustom .parrafoCarrusel {
+  justify-content: center;
+  position: relative;
+  bottom: 250px;
+  font-size: 200%;
+  font-family: "Ubuntu", sans-serif;
+  text-shadow: 0px 0px 25px black;
+  background-color: rgba(0, 0, 0, 0.018);
+}
+
+.title {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 300%;
+  color: #3c4858;
+  width: 40%;
+  margin-block: 5% 2%;
+}
+
+.subtitle {
+  text-align: center;
+  color: #999;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 200%;
+  width: 50%;
+}
+
+.cardsProductos {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding-left: 8%;
+}
+.cardsProductos .trajeta {
+  margin-top: 10%;
+  width: 350px;
+}
+.cardsProductos .trajeta .imgProductos {
+  height: 350px;
+}
+.cardsProductos .trajeta .textos-cards {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 150%;
+}
+.cardsProductos .trajeta .textos-cards .card-description {
+  color: #999;
+}
+.cardsProductos .trajeta .textos-cards .card-btn {
+  transition: all 0.3s;
+}
+.cardsProductos .trajeta .textos-cards .card-btn:hover {
+  background-color: white;
+  color: #0a53be;
+}
+
+.verMas {
+  margin-block: 3%;
+  text-decoration: none;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #aaa;
+  transition: all 0.3s;
+}
+
+.verMas:hover {
+  color: rgb(94, 93, 93);
+  transform: translateY(-3px);
+}
+
+.redes {
+  background-color: #546e7a;
+  font-family: "Montserrat Alternates", sans-serif;
+  box-shadow: 0px 0px 20px black;
+  padding-block: 0.5%;
+}
+.redes .logo-redes {
+  width: 50px;
+  transition: all 0.1s;
+}
+.redes .logo-redes:hover {
+  transform: scale(1.02);
+}/*# sourceMappingURL=styles.css.map */

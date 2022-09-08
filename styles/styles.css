@@ -1,4 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&family=Ubuntu:wght@700&display=swap");
+.title {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 300%;
+  color: #3c4858;
+  width: 40%;
+  margin-block: 5% 2%;
+}
+
+.subtitle {
+  text-align: center;
+  color: #999;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 200%;
+  width: 50%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -32,6 +49,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   position: relative;
   bottom: 250px;
   font-size: 300%;
@@ -47,23 +65,6 @@
   font-family: "Ubuntu", sans-serif;
   text-shadow: 0px 0px 25px black;
   background-color: rgba(0, 0, 0, 0.018);
-}
-
-.title {
-  text-align: center;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 300%;
-  color: #3c4858;
-  width: 40%;
-  margin-block: 5% 2%;
-}
-
-.subtitle {
-  text-align: center;
-  color: #999;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 200%;
-  width: 50%;
 }
 
 .cardsProductos {
@@ -113,9 +114,193 @@
   padding-block: 0.5%;
 }
 .redes .logo-redes {
-  width: 50px;
   transition: all 0.1s;
 }
 .redes .logo-redes:hover {
   transform: scale(1.02);
+}
+.redes .logo-instagram {
+  width: 50px;
+}
+.redes .logo-facebook {
+  width: 60px;
+}
+.redes .logo-whatsapp {
+  width: 50px;
+}
+.redes .logo-ubicacion {
+  width: 45px;
+}
+
+.cardCategorias {
+  opacity: 0.88;
+  transition: all 0.3s;
+}
+
+.cardCategorias:hover {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+.catalogo-h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  text-shadow: 0px 0px 15px black;
+  background-image: url(/img/fondocategorias.jpg);
+  padding-block: 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 15px black;
+  text-align: center;
+}
+
+.catalogo-h1-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  font-family: "Ubuntu", sans-serif;
+  color: #3c4858;
+}
+
+.cardsProductos .cardCategorias .textos-cards .h5-card {
+  text-align: center;
+  font-size: 120%;
+}
+
+.contacto__gmail__wsp {
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+}
+.contacto__gmail__wsp .h2-contacto {
+  font-family: "Ubuntu", sans-serif;
+}
+.contacto__gmail__wsp .contacto__gmail {
+  position: relative;
+  left: 150px;
+  top: 30px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.contacto__gmail__wsp .contacto__wsp {
+  position: relative;
+  left: 270px;
+  width: 100px;
+  height: 100px;
+}
+
+.contacto__local {
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.contacto__seguinos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(235, 202, 159);
+  position: relative;
+  top: 300px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.acercade {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.acercade .acercade__titulo {
+  justify-content: center;
+  font-size: 50px;
+  font-family: "Ubuntu", sans-serif;
+}
+.acercade .acercade__parrafo {
+  width: 50%;
+  font-size: 30px;
+  font-family: "Montserrat Alternates", sans-serif;
+  text-align: center;
+}
+
+/*Media Queries-Responsive*/
+@media screen and (max-width: 1600px) {
+  .cardsProductos {
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .navbar-link {
+    font-size: 70%;
+  }
+  .cardsProductos {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 200%;
+    width: 50%;
+  }
+  .subtitle {
+    font-size: 150%;
+    width: 80%;
+  }
+  .trajeta {
+    width: 250px;
+  }
+  .cardsProductos {
+    padding-left: 13.5%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .imgCarrusel {
+    height: 400px;
+  }
+  .cardsProductos {
+    grid-template-columns: 100%;
+    padding-left: 25%;
+  }
+  .title {
+    font-size: 180%;
+    width: 90%;
+  }
+  .subtitle {
+    font-size: 150%;
+    width: 100%;
+  }
+  .textos-cards {
+    font-size: 100%;
+  }
+  .verMas {
+    font-size: 80%;
+    margin-block: 8%;
+  }
+  .footer {
+    margin-top: 8%;
+    font-size: 80%;
+    text-align: center;
+    width: 80%;
+    padding-left: 20%;
+  }
+  .logo-redes {
+    width: 35px;
+  }
+  .redes {
+    gap: 40px;
+  }
+  .catalogo-h1 {
+    font-size: 300%;
+  }
 }/*# sourceMappingURL=styles.css.map */

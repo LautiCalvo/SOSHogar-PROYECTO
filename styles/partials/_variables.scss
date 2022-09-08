@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&family=Ubuntu:wght@700&display=swap');
+$mainColor:#546e7a;
+$fontTitulos:'Ubuntu', sans-serif;
+$fontParrafos:'Montserrat Alternates', sans-serif;
+$colorTitulo:#3c4858;
+$colorParrafos:#999;
+$redes:(
+    instagram:50px,
+    facebook:60px,
+    whatsapp:50px,
+    ubicacion:45px
+);
+%titulos {
+    text-align: center;
+    font-family: $fontTitulos;
+    font-size: 300%;
+    color: $colorTitulo;
+    width: 40%;
+    margin-block: 5% 2%;
+}
+
+%parrafos {
+    text-align: center;
+    color:  $colorParrafos;
+    font-family: $fontParrafos;
+    font-size: 200%;
+    width: 50%;
+}

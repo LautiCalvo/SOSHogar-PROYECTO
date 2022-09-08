@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos-SOSHOGAR</title>
+    <title>S.O.S Hogar-Regaleria Artesanal-Productos</title>
+    <meta name="description" content="Compre nuetros productos de exelente calidad a un buen precio">
+    <meta name="keywords" content="regaleria, artesanal, artículos de limpieza, esotéricos, venta, productos ">
 <!--Bootstrap-->
 <link rel="stylesheet" href="./styles/bootstrap.min.css">
 
 <!--Custom Styles-->
-<link rel="stylesheet" href="./styles/style.css">
+<link rel="stylesheet" href="./styles/styles.css">
 
 <!--Logo Pestaña-->
 <link rel="icon" href="./img/soslogo.png">
@@ -26,36 +28,34 @@
 </head>
 <body>
     <!--MENU DE NAVEGACION-->
-    <nav class="navbar navbar-expand-lg bg-secondary sticky-sm-top">
-        <div class="container-fluid">
-    
-            <div class="navbar">
-                <div class="container">
-                  <a class="navbar-brand" href="/">
-                    <img src="./img/soslogo.png" alt="Inicio" width="100" height="100">
-                  </a>
-                </div>
-              </div>
-    
-          <div class="collapse navbar-collapse d-flex justify-content-end fs-3" id="navbarNav" >
-            <ul class="navbar-nav gap-5">
-              <li class="nav-item">
-                <a class="nav-link active navbar-link" aria-current="page" href="./categorias.html">Categorias</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active navbar-link" href="./productos.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active navbar-link" href="./contacto.html">Contanco</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active navbar-link" href="./acercade.html">Acerca De</a>
-              </li>
-    
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg sticky-sm-top navCustom">
+      <div class="container-fluid">
+  
+        <a class="navbar-brand " href="/"><img src="./img/soslogo.png" alt="" width="100" height="100"></a>
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse  navbtn fs-3" id="navbarSupportedContent">
+          <ul class="navbar-nav gap-5 ">
+            <li class="nav-item navbar-link">
+              <a class="nav-link active" aria-current="page" href="./categorias.html">Categorias</a>
+            </li>
+            <li class="nav-item navbar-link">
+              <a class="nav-link active" href="./productos.html">Productos</a>
+            </li>
+            <li class="nav-item navbar-link">
+              <a class="nav-link active" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item navbar-link">
+              <a class="nav-link active" href="./acercade.html">Acerca De</a>
+            </li>
+          </ul>
+  
         </div>
-      </nav>
+      </div>
+    </nav>
 
       <div>
         <h1 class="catalogo-h1-2">Nuestros Productos</h1>
@@ -68,8 +68,8 @@
             <img src="./img/productos/lamparadesalelefante.png" class="card-img-top imgProductos" alt="...">
             <div class="card-body textos-cards">
               <h5 class="card-title">$1500 ARS</h5>
-              <p class="card-text">Lampara De Sal Elefante Blanco</p>
-              <a href="#" class="btn btn-primary">Comprar🛒</a>
+              <p class="card-text card-description">Lampara De Sal Elefante Blanco</p>
+              <a href="#" class="btn btn-primary card-btn">Comprar🛒</a>
             </div>
           </div>
     
@@ -77,8 +77,8 @@
             <img src="./img/productos/cascadadehumo.png" class="card-img-top imgProductos" alt="...">
             <div class="card-body textos-cards">
               <h5 class="card-title">$2000 ARS</h5>
-              <p class="card-text">Fuente Cascada Humo Porta Conos Decorativa</p>
-              <a href="#" class="btn btn-primary">Comprar🛒</a>
+              <p class="card-text card-description">Fuente Cascada Humo Porta Conos Decorativa</p>
+              <a href="#" class="btn btn-primary card-btn">Comprar🛒</a>
             </div>
           </div>
     
@@ -86,8 +86,8 @@
             <img src="./img/productos/hornilloelectrico.png" class="card-img-top imgProductos" alt="...">
             <div class="card-body textos-cards">
               <h5 class="card-title">$1300 ARS</h5>
-              <p class="card-text">Hornillo Electrico Cuadrado Amor y Paz</p>
-              <a href="#" class="btn btn-primary">Comprar🛒</a>
+              <p class="card-text card-description">Hornillo Electrico Cuadrado Amor y Paz</p>
+              <a href="#" class="btn btn-primary card-btn">Comprar🛒</a>
             </div>
           </div>
     
@@ -95,8 +95,8 @@
             <img src="./img/productos/budas-negrosydorados-x3.png" class="card-img-top imgProductos" alt="...">
             <div class="card-body textos-cards">
               <h5 class="card-title">$2500 ARS</h5>
-              <p class="card-text">Niños Budas Doradors y Negros x3</p>
-              <a href="#" class="btn btn-primary">Comprar🛒</a>
+              <p class="card-text card-description">Niños Budas Doradors y Negros x3</p>
+              <a href="#" class="btn btn-primary card-btn">Comprar🛒</a>
             </div>
           </div>
     
@@ -104,8 +104,8 @@
             <img src="./img/productos/mulataconcantero.png" class="card-img-top imgProductos" alt="...">
             <div class="card-body textos-cards">
               <h5 class="card-title">$1800 ARS</h5>
-              <p class="card-text">Adorno Mulatas Con Cantero</p>
-              <a href="#" class="btn btn-primary">Comprar🛒</a>
+              <p class="card-text card-description">Adorno Mulatas Con Cantero</p>
+              <a href="#" class="btn btn-primary card-btn">Comprar🛒</a>
             </div>
           </div>
     
@@ -113,8 +113,8 @@
             <img src="./img/productos/elefantenegro.png" class="card-img-top imgProductos" alt="...">
             <div class="card-body textos-cards">
               <h5 class="card-title">$1200 ARS</h5>
-              <p class="card-text">Figura Elefante Ceramica Negro Minimalista</p>
-              <a href="#" class="btn btn-primary">Comprar🛒</a>
+              <p class="card-text card-description">Figura Elefante Ceramica Negro Minimalista</p>
+              <a href="#" class="btn btn-primary card-btn">Comprar🛒</a>
             </div>
           </div>
     
@@ -122,8 +122,8 @@
             <img src="./img/productos/quemadorazul.png" class="card-img-top imgProductos" alt="...">
             <div class="card-body textos-cards">
               <h5 class="card-title">$800 ARS</h5>
-              <p class="card-text">Quemador De Palo Santo Azul</p>
-              <a href="#" class="btn btn-primary">Comprar🛒</a>
+              <p class="card-text card-description">Quemador De Palo Santo Azul</p>
+              <a href="#" class="btn btn-primary card-btn">Comprar🛒</a>
             </div>
           </div>
     
@@ -131,8 +131,8 @@
             <img src="./img/productos/quemadorsahumerio.png" class="card-img-top imgProductos" alt="...">
             <div class="card-body textos-cards">
               <h5 class="card-title">$2500 ARS</h5>
-              <p class="card-text">Quemador de Palo Santo + Prota</p>
-              <a href="#" class="btn btn-primary">Comprar🛒</a>
+              <p class="card-text card-description">Quemador de Palo Santo + Prota</p>
+              <a href="#" class="btn btn-primary card-btn">Comprar🛒</a>
             </div>
           </div>
 
@@ -140,8 +140,8 @@
             <img src="./img/velas.png" class="card-img-top imgProductos" alt="...">
             <div class="card-body textos-cards">
               <h5 class="card-title">$1860 ARS</h5>
-              <p class="card-text">Veloncito Aromatico 3 Unidades</p>
-              <a href="#" class="btn btn-primary">Comprar🛒</a>
+              <p class="card-text card-description">Veloncito Aromatico 3 Unidades</p>
+              <a href="#" class="btn btn-primary card-btn">Comprar🛒</a>
             </div>
           </div>
 
@@ -149,8 +149,8 @@
             <img src="./img/productos/mulataconjirafa.png" class="card-img-top imgProductos" alt="...">
             <div class="card-body textos-cards">
               <h5 class="card-title">$2340 ARS</h5>
-              <p class="card-text">Mulata Con Jirafa</p>
-              <a href="#" class="btn btn-primary">Comprar🛒</a>
+              <p class="card-text card-description">Mulata Con Jirafa</p>
+              <a href="#" class="btn btn-primary card-btn">Comprar🛒</a>
             </div>
           </div>
 
@@ -158,8 +158,8 @@
             <img src="./img/productos/duendeverde.png" class="card-img-top imgProductos" alt="...">
             <div class="card-body textos-cards">
               <h5 class="card-title">$1180 ARS</h5>
-              <p class="card-text">Duende Artesanal Colgante Verde</p>
-              <a href="#" class="btn btn-primary">Comprar🛒</a>
+              <p class="card-text card-description">Duende Artesanal Colgante Verde</p>
+              <a href="#" class="btn btn-primary card-btn">Comprar🛒</a>
             </div>
           </div>
 
@@ -167,8 +167,8 @@
             <img src="./img/productos/llamadordeangeles.png" class="card-img-top imgProductos" alt="...">
             <div class="card-body textos-cards">
               <h5 class="card-title">$2700 ARS</h5>
-              <p class="card-text">Llamador de Angeles</p>
-              <a href="#" class="btn btn-primary">Comprar🛒</a>
+              <p class="card-text card-description">Llamador de Angeles</p>
+              <a href="#" class="btn btn-primary card-btn">Comprar🛒</a>
             </div>
           </div>
 
@@ -176,8 +176,8 @@
             <img src="./img/productos/budanegroydorado.png" class="card-img-top imgProductos" alt="...">
             <div class="card-body textos-cards">
               <h5 class="card-title">$3500 ARS</h5>
-              <p class="card-text">Buda Hindu Reposando</p>
-              <a href="#" class="btn btn-primary">Comprar🛒</a>
+              <p class="card-text card-description">Buda Hindu Reposando</p>
+              <a href="#" class="btn btn-primary card-btn">Comprar🛒</a>
             </div>
           </div>
 
@@ -185,8 +185,8 @@
             <img src="./img/productos/mulataconcuenco.png" class="card-img-top imgProductos" alt="...">
             <div class="card-body textos-cards">
               <h5 class="card-title">$4280 ARS</h5>
-              <p class="card-text">Mulatas Con Cuenco</p>
-              <a href="#" class="btn btn-primary">Comprar🛒</a>
+              <p class="card-text card-description">Mulatas Con Cuenco</p>
+              <a href="#" class="btn btn-primary card-btn">Comprar🛒</a>
             </div>
           </div>
 
@@ -194,8 +194,8 @@
             <img src="./img/hornillos.png" class="card-img-top imgProductos" alt="...">
             <div class="card-body textos-cards">
               <h5 class="card-title">$2650 ARS</h5>
-              <p class="card-text">Hornito Cerámica </p>
-              <a href="#" class="btn btn-primary">Comprar🛒</a>
+              <p class="card-text card-description">Hornito Cerámica </p>
+              <a href="#" class="btn btn-primary card-btn">Comprar🛒</a>
             </div>
           </div>
 
@@ -203,8 +203,8 @@
             <img src="./img/productos/juegodearos.png" class="card-img-top imgProductos" alt="...">
             <div class="card-body textos-cards">
               <h5 class="card-title">$1500 ARS</h5>
-              <p class="card-text">Juego De Aros + Dije</p>
-              <a href="#" class="btn btn-primary">Comprar🛒</a>
+              <p class="card-text card-description">Juego De Aros + Dije</p>
+              <a href="#" class="btn btn-primary card-btn">Comprar🛒</a>
             </div>
           </div>
     

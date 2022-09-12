@@ -1,0 +1,586 @@
+@import "./partials/variables";
+@import "./partials/reset";
+
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align ;
+}
+
+/*Navbar*/
+.navCustom{
+    background-color: $mainColor;
+    box-shadow:0px 0px 15px black ;
+
+
+    .navbar-link{
+        font-family: $fontTitulos;
+        transition-property: all;
+        transition-duration: 0.3s;
+        
+    }
+    .navbar-link:hover{
+        transform: scale(1.05) ;
+    }
+}
+/*Carrusel*/
+.carruselCustom{
+    box-shadow: 0px 0px 15px black;
+    .imgCarrusel{
+        height: 800px;
+    }
+    .tituloCarrusel{
+        @include flex(row,center,center);
+        position: relative;
+        bottom: 250px;
+        font-size: 300%;
+        font-family: $fontTitulos;
+        text-shadow: 0px 0px 25px black;
+        background-color: rgba(0, 0, 0, 0.018);
+    }
+    .parrafoCarrusel{
+        justify-content: center;
+        position: relative;
+        bottom: 250px;
+        font-size: 200%;
+        font-family: $fontTitulos;
+        text-shadow: 0px 0px 25px black;
+        background-color: rgba(0, 0, 0, 0.018);
+    }
+}
+
+
+/*Titulos y Parrafos*/
+.title{
+    @extend %titulos;
+     
+}
+.subtitle{
+    @extend %parrafos;
+
+}
+
+
+/*Productos*/
+.cardsProductos{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    padding-left: 8%;
+    .trajeta{
+        margin-top: 10%;
+        width: 350px;
+        .imgProductos{
+            height: 350px;
+        }        
+        .textos-cards{
+            font-family: $fontParrafos;
+            font-size: 150%;
+            .card-description{
+                color:  $colorParrafos;
+            }
+            .card-btn{
+                transition: all 0.3s;
+            }
+            .card-btn:hover{
+                background-color: white;
+                color: #0a53be;
+            }
+
+        }
+    }
+}
+
+
+/*Ver mas Index*/
+.verMas{
+    margin-block: 3%;
+    text-decoration: none;
+    font-family: $fontParrafos;
+    color: #aaa;
+    transition: all 0.3s;
+    
+}
+
+.verMas:hover{
+    color: rgb(94, 93, 93);
+    transform: translateY(-3px);
+}
+
+
+/*Footer*/
+footer{
+    background-image: url(../img/background-footer.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+.footer__container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding-top: 3%;
+    padding-left: 7%;
+    .footer__logo__parrafo{
+        @include flex(column, center, center);
+
+        
+        .footer__logo{
+            width: 250px;
+
+            
+    
+        }
+        .footer__parrafo{
+            text-align: center;
+            width: 70%;
+            font-family: $fontParrafos;
+            color: $colorParrafos;
+            font-size: 150% ;
+        }
+    }
+    .footer__paginas{
+        @include flex(column, center,center );
+        .footer__h3{
+            font-size: 200%;
+            font-family: $fontTitulos;
+            margin-bottom: 5%;
+            color: $colorTitulo;
+            
+        }
+
+        a{
+            text-decoration: none;
+            font-family: $fontParrafos;
+            color: $colorParrafos;
+            font-size: 130%;
+            transition: all 0.3s;
+            
+        }
+        a:hover{
+            opacity: 0.9;
+            transform: scale(1.02)
+            
+
+        }
+    }
+
+    .footer__puntodeventa{
+        @include flex(column, center,center );
+        .footer__h3{
+            a{
+                text-decoration: none;
+                font-size: 120%;
+                font-family: $fontTitulos;
+                color: $colorTitulo;
+                transition: all 0.3s;
+            }
+            a:hover{
+                opacity: 0.8;
+                
+    
+            }
+
+        }
+         
+
+        
+    }
+
+    .footer__redes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .footer__h3{
+            text-decoration: none;
+            font-size: 200%;
+            font-family: $fontTitulos;
+            color: $colorTitulo;
+            margin-bottom: 8%;
+        }
+        a{
+            text-decoration: none;
+            font-family: $fontParrafos;
+            color: $colorParrafos;
+            font-size: 130%;
+            transition: all 0.3s;
+
+
+        }
+        a:hover{
+            opacity: 0.9;
+            transform: scale(1.01)
+        }
+    }
+}
+
+
+.footer__copy{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+    font-family: $fontParrafos;
+    color: $colorParrafos;
+    font-size: 120%;
+    p{
+        b{
+            color: $colorTitulo;
+            font-size: 105%;
+        }
+    }
+
+    
+}
+}
+
+
+/*Cards Categorias */
+.cardCategorias{
+    opacity: 0.88;
+    transition: all 0.3s;
+}
+.cardCategorias:hover{
+    opacity: 1;
+    transform: scale(1.02);
+}
+.cardsProductos{
+    .cardCategorias{
+        .textos-cards{
+            .h5-card{
+                text-align: center;
+                font-size: 120%;
+            }
+        }
+    }
+}
+
+
+/*Titulo categorias*/
+.catalogo-h1{
+    @include flex(row, center, center);
+    font-size: 100px;
+    font-family: $fontTitulos;
+    color: white;
+    text-shadow: 0px 0px 15px black;
+    background-image: url(../img/fondocategorias.jpg);
+    padding-block: 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 15px black;
+    text-align: center;
+}
+
+/*Titulo Productos*/
+.catalogo-h1-2{
+    @include flex(row, center, center);
+    font-size: 100px;
+    font-family: $fontTitulos;
+    color: $colorTitulo;
+}
+
+
+
+
+
+
+/*Formulario contacto*/
+
+.form__container{
+    @include flex(column,center ,center );
+    
+    .form__titulo{
+        @extend %titulos
+    }
+    .form__parrafo{
+        @extend %parrafos;
+        width: 20%;
+        font-size: 150%;
+        margin-bottom: 3%;
+        
+    }
+    .form__contacto{
+        @include flex(column, center, flex-start);
+        font-family: $fontParrafos;
+        color: $colorParrafos;
+        font-size: 140%;
+        position: relative;
+        right: 20px;
+        
+        .form__text{
+            position: relative;
+            bottom: 100px;
+            transition: all 0.3s;
+
+
+        }
+        .form__mensaje{
+            position: relative;
+            bottom: 240px;
+        }
+
+        
+
+        .form__input{
+            width: 120%;
+            height: 300%;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid $colorParrafos;
+            color: $colorTitulo;
+            padding-inline: 1%;
+            padding-bottom: 1%;
+            margin-block: 10%;
+            transition: all 0.3s;
+        }
+        .form__input:focus{
+            border-bottom: 1px solid #0a53be;
+        }
+
+        .form__input:focus + .form__text {
+            color: #0a53be;
+            
+        } 
+      
+        .form__enviar{
+            margin-block: 10%;
+            text-align: center;
+            width: 120%;
+            height: 160%;
+            text-decoration: none;
+            outline: none;
+            color: white;
+            background-color: #0a53be;
+            border: 1px solid #0a53be;
+            border-radius: 5px;
+            transition: all 0.3s;
+            
+        }
+        .form__enviar:hover{
+            background-color: white;
+            color: #0a53be;
+        }
+
+
+    }
+}
+
+/*Acerca De*/
+
+.acercade{
+    @include flex(column, center, center);
+    .acercade__titulo{
+        justify-content: center;
+        font-size: map-get($redes , whatsapp );
+        font-family:$fontTitulos;
+        
+    }
+    .acercade__parrafo{
+        width: 50%;
+       font-size: 30px;
+       font-family:$fontParrafos;
+       text-align: center;
+    }
+}
+.contacto__local{
+    font-size: 25px;
+    @include flex(row, center, center);
+    margin-bottom: 30px;
+    font-family: $fontParrafos;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Media Queries-Responsive*/
+
+@media screen and (max-width:1600px) {
+
+    .cardsProductos{
+        grid-template-columns: 33.33% 33.33% 33.33%  ; 
+        
+    }
+    
+}
+
+@media screen and (max-width:1280px){
+    .cardsProductos{
+        padding-left: 5%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .navbar-link{
+        font-size: 70%;
+        
+        
+    }
+
+
+
+    .cardsProductos{
+        grid-template-columns: 50% 50%  ; 
+        padding-left: 11%;
+        
+    }
+
+    footer{
+
+        
+    
+    .footer__container{
+
+        .footer__logo__parrafo{
+
+    
+            
+            .footer__logo{
+                width: 220px;
+    
+                
+        
+            }
+            .footer__parrafo{
+                
+                width: 70%;
+
+                font-size: 100% ;
+            }
+        }
+        .footer__paginas{
+            
+            .footer__h3{
+                font-size: 180%;
+
+                
+            }
+    
+            a{
+
+                font-size: 100%;
+
+                
+            }
+
+        }
+    
+        .footer__puntodeventa{
+
+            .footer__h3{
+                a{
+
+                    font-size: 100%;
+
+                }
+
+    
+            }
+             
+    
+            
+        }
+    
+        .footer__redes{
+
+            .footer__h3{
+
+                font-size: 170%;
+
+            }
+            a{
+
+                font-size: 100%;
+                
+    
+    
+            }
+
+        }
+    }
+    
+    
+    
+    }
+
+
+    
+
+}
+
+@media screen and (max-width:768px){
+
+
+    .title{
+        font-size: 200%;
+        width: 50%;
+    }
+
+    .subtitle{
+        font-size: 150%;
+        width: 80%;
+    }
+
+    .trajeta{
+        width: 250px;
+        
+    }
+
+    .cardsProductos{
+        grid-template-columns: 50%;
+        justify-content: center;
+        padding-left: 0px;
+    }
+
+    .carruselCustom{
+        
+
+        .tituloCarrusel{
+
+
+            font-size: 250%;
+
+        }
+        .parrafoCarrusel{
+
+            font-size: 150%;
+            
+        }
+    }
+    .catalogo-h1-2{
+        text-align: center;
+        font-size: 400%;
+    }
+
+    
+
+}
+
+@media screen and (max-width:854px){
+    .cardsProductos{
+        
+        padding-left: 50px;
+    }
+    .title{
+        font-size: 150%;
+    }
+    .subtitle{
+        font-size: 150%;
+    }
+    .cardsProductos{
+        .trajeta{
+            width: 300px;
+            .imgProductos{
+                height: 300px;
+            }
+        }
+    }
+}
+
+
+

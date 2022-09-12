@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&family=Ubuntu:wght@700&display=swap");
-.title {
+.form__container .form__titulo, .title {
   text-align: center;
   font-family: "Ubuntu", sans-serif;
   font-size: 300%;
@@ -8,7 +8,7 @@
   margin-block: 5% 2%;
 }
 
-.subtitle {
+.form__container .form__parrafo, .subtitle {
   text-align: center;
   color: #999;
   font-family: "Montserrat Alternates", sans-serif;
@@ -22,13 +22,10 @@
   box-sizing: border-box;
 }
 
+/*Navbar*/
 .navCustom {
   background-color: #546e7a;
   box-shadow: 0px 0px 15px black;
-}
-.navCustom .navbtn {
-  display: flex;
-  justify-content: flex-end;
 }
 .navCustom .navbar-link {
   font-family: "Ubuntu", sans-serif;
@@ -39,6 +36,7 @@
   transform: scale(1.05);
 }
 
+/*Carrusel*/
 .carruselCustom {
   box-shadow: 0px 0px 15px black;
 }
@@ -67,6 +65,8 @@
   background-color: rgba(0, 0, 0, 0.018);
 }
 
+/*Titulos y Parrafos*/
+/*Productos*/
 .cardsProductos {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
@@ -94,6 +94,7 @@
   color: #0a53be;
 }
 
+/*Ver mas Index*/
 .verMas {
   margin-block: 3%;
   text-decoration: none;
@@ -107,31 +108,111 @@
   transform: translateY(-3px);
 }
 
-.redes {
-  background-color: #546e7a;
+/*Footer*/
+footer {
+  background-image: url(../img/background-footer.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer .footer__container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding-top: 3%;
+  padding-left: 7%;
+}
+footer .footer__container .footer__logo__parrafo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer__container .footer__logo__parrafo .footer__logo {
+  width: 250px;
+}
+footer .footer__container .footer__logo__parrafo .footer__parrafo {
+  text-align: center;
+  width: 70%;
   font-family: "Montserrat Alternates", sans-serif;
-  box-shadow: 0px 0px 20px black;
-  padding-block: 0.5%;
+  color: #999;
+  font-size: 150%;
 }
-.redes .logo-redes {
-  transition: all 0.1s;
+footer .footer__container .footer__paginas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.redes .logo-redes:hover {
+footer .footer__container .footer__paginas .footer__h3 {
+  font-size: 200%;
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 5%;
+  color: #3c4858;
+}
+footer .footer__container .footer__paginas a {
+  text-decoration: none;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #999;
+  font-size: 130%;
+  transition: all 0.3s;
+}
+footer .footer__container .footer__paginas a:hover {
+  opacity: 0.9;
   transform: scale(1.02);
 }
-.redes .logo-instagram {
-  width: 50px;
+footer .footer__container .footer__puntodeventa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.redes .logo-facebook {
-  width: 60px;
+footer .footer__container .footer__puntodeventa .footer__h3 a {
+  text-decoration: none;
+  font-size: 120%;
+  font-family: "Ubuntu", sans-serif;
+  color: #3c4858;
+  transition: all 0.3s;
 }
-.redes .logo-whatsapp {
-  width: 50px;
+footer .footer__container .footer__puntodeventa .footer__h3 a:hover {
+  opacity: 0.8;
 }
-.redes .logo-ubicacion {
-  width: 45px;
+footer .footer__container .footer__redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .footer__container .footer__redes .footer__h3 {
+  text-decoration: none;
+  font-size: 200%;
+  font-family: "Ubuntu", sans-serif;
+  color: #3c4858;
+  margin-bottom: 8%;
+}
+footer .footer__container .footer__redes a {
+  text-decoration: none;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #999;
+  font-size: 130%;
+  transition: all 0.3s;
+}
+footer .footer__container .footer__redes a:hover {
+  opacity: 0.9;
+  transform: scale(1.01);
+}
+footer .footer__copy {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #999;
+  font-size: 120%;
+}
+footer .footer__copy p b {
+  color: #3c4858;
+  font-size: 105%;
 }
 
+/*Cards Categorias */
 .cardCategorias {
   opacity: 0.88;
   transition: all 0.3s;
@@ -142,6 +223,12 @@
   transform: scale(1.02);
 }
 
+.cardsProductos .cardCategorias .textos-cards .h5-card {
+  text-align: center;
+  font-size: 120%;
+}
+
+/*Titulo categorias*/
 .catalogo-h1 {
   display: flex;
   flex-direction: row;
@@ -151,7 +238,7 @@
   font-family: "Ubuntu", sans-serif;
   color: white;
   text-shadow: 0px 0px 15px black;
-  background-image: url(/img/fondocategorias.jpg);
+  background-image: url(../img/fondocategorias.jpg);
   padding-block: 20%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -159,6 +246,7 @@
   text-align: center;
 }
 
+/*Titulo Productos*/
 .catalogo-h1-2 {
   display: flex;
   flex-direction: row;
@@ -169,53 +257,75 @@
   color: #3c4858;
 }
 
-.cardsProductos .cardCategorias .textos-cards .h5-card {
+/*Formulario contacto*/
+.form__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form__container .form__parrafo {
+  width: 20%;
+  font-size: 150%;
+  margin-bottom: 3%;
+}
+.form__container .form__contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #999;
+  font-size: 140%;
+  position: relative;
+  right: 20px;
+}
+.form__container .form__contacto .form__text {
+  position: relative;
+  bottom: 100px;
+  transition: all 0.3s;
+}
+.form__container .form__contacto .form__mensaje {
+  position: relative;
+  bottom: 240px;
+}
+.form__container .form__contacto .form__input {
+  width: 120%;
+  height: 300%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #999;
+  color: #3c4858;
+  padding-inline: 1%;
+  padding-bottom: 1%;
+  margin-block: 10%;
+  transition: all 0.3s;
+}
+.form__container .form__contacto .form__input:focus {
+  border-bottom: 1px solid #0a53be;
+}
+.form__container .form__contacto .form__input:focus + .form__text {
+  color: #0a53be;
+}
+.form__container .form__contacto .form__enviar {
+  margin-block: 10%;
   text-align: center;
-  font-size: 120%;
+  width: 120%;
+  height: 160%;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: #0a53be;
+  border: 1px solid #0a53be;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.form__container .form__contacto .form__enviar:hover {
+  background-color: white;
+  color: #0a53be;
 }
 
-.contacto__gmail__wsp {
-  display: flex;
-  justify-content: space-around;
-  font-size: 30px;
-}
-.contacto__gmail__wsp .h2-contacto {
-  font-family: "Ubuntu", sans-serif;
-}
-.contacto__gmail__wsp .contacto__gmail {
-  position: relative;
-  left: 150px;
-  top: 30px;
-  font-family: "Montserrat Alternates", sans-serif;
-}
-.contacto__gmail__wsp .contacto__wsp {
-  position: relative;
-  left: 270px;
-  width: 100px;
-  height: 100px;
-}
-
-.contacto__local {
-  font-size: 25px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-  font-family: "Montserrat Alternates", sans-serif;
-}
-
-.contacto__seguinos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(235, 202, 159);
-  position: relative;
-  top: 300px;
-  font-family: "Montserrat Alternates", sans-serif;
-}
-
+/*Acerca De*/
 .acercade {
   display: flex;
   flex-direction: column;
@@ -234,10 +344,25 @@
   text-align: center;
 }
 
+.contacto__local {
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
 /*Media Queries-Responsive*/
 @media screen and (max-width: 1600px) {
   .cardsProductos {
     grid-template-columns: 33.33% 33.33% 33.33%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .cardsProductos {
+    padding-left: 5%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -246,6 +371,29 @@
   }
   .cardsProductos {
     grid-template-columns: 50% 50%;
+    padding-left: 11%;
+  }
+  footer .footer__container .footer__logo__parrafo .footer__logo {
+    width: 220px;
+  }
+  footer .footer__container .footer__logo__parrafo .footer__parrafo {
+    width: 70%;
+    font-size: 100%;
+  }
+  footer .footer__container .footer__paginas .footer__h3 {
+    font-size: 180%;
+  }
+  footer .footer__container .footer__paginas a {
+    font-size: 100%;
+  }
+  footer .footer__container .footer__puntodeventa .footer__h3 a {
+    font-size: 100%;
+  }
+  footer .footer__container .footer__redes .footer__h3 {
+    font-size: 170%;
+  }
+  footer .footer__container .footer__redes a {
+    font-size: 100%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -261,46 +409,35 @@
     width: 250px;
   }
   .cardsProductos {
-    padding-left: 13.5%;
+    grid-template-columns: 50%;
+    justify-content: center;
+    padding-left: 0px;
+  }
+  .carruselCustom .tituloCarrusel {
+    font-size: 250%;
+  }
+  .carruselCustom .parrafoCarrusel {
+    font-size: 150%;
+  }
+  .catalogo-h1-2 {
+    text-align: center;
+    font-size: 400%;
   }
 }
-@media screen and (max-width: 480px) {
-  .imgCarrusel {
-    height: 400px;
-  }
+@media screen and (max-width: 854px) {
   .cardsProductos {
-    grid-template-columns: 100%;
-    padding-left: 25%;
+    padding-left: 50px;
   }
   .title {
-    font-size: 180%;
-    width: 90%;
+    font-size: 150%;
   }
   .subtitle {
     font-size: 150%;
-    width: 100%;
   }
-  .textos-cards {
-    font-size: 100%;
+  .cardsProductos .trajeta {
+    width: 300px;
   }
-  .verMas {
-    font-size: 80%;
-    margin-block: 8%;
-  }
-  .footer {
-    margin-top: 8%;
-    font-size: 80%;
-    text-align: center;
-    width: 80%;
-    padding-left: 20%;
-  }
-  .logo-redes {
-    width: 35px;
-  }
-  .redes {
-    gap: 40px;
-  }
-  .catalogo-h1 {
-    font-size: 300%;
+  .cardsProductos .trajeta .imgProductos {
+    height: 300px;
   }
 }/*# sourceMappingURL=styles.css.map */
